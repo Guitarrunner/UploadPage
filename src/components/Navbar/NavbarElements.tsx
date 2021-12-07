@@ -36,6 +36,7 @@ export const Logo = styled.img`
   overflow: hidden;
   padding: 30px 10px;
   overflow: visible;
+  z-index: 10;
 
   @media screen and (max-width: 768px) {
     width: 18vh;

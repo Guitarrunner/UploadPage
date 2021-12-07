@@ -2,7 +2,9 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import About from "./views/About";
 import "./App.scss";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/Navbar";
+import Sidebar from "./components/Sidebar";
+import Home from "./views/Home";
 
 // When the user scrolls down 50px from the top of the document, resize the header's font size
 window.onscroll = function () {
@@ -22,7 +24,7 @@ function App() {
   return (
     <>
       <Router>
-        <Navbar></Navbar>
+        <Home />
       </Router>
 
       <body>
@@ -45,10 +47,10 @@ function App() {
               <i className="fab fa-instagram"></i>
             </span>
           </div>
-          <div className="icon github">
-            <div className="tooltip">Github</div>
+          <div className="icon blog">
+            <div className="tooltip">Blog</div>
             <span>
-              <i className="fab fa-github"></i>
+              <i className="fab fa-blogger"></i>
             </span>
           </div>
           <div className="icon youtube">

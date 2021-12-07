@@ -77,6 +77,7 @@ body {
   display: inline-block;
   right: 5vw;
   top: 20vh;
+  z-index: 10;
 }
 
 .wrapper .icon {
@@ -156,9 +157,9 @@ body {
   color: #ffffff;
 }
 
-.wrapper .github:hover,
-.wrapper .github:hover .tooltip,
-.wrapper .github:hover .tooltip::before {
+.wrapper .blog:hover,
+.wrapper .blog:hover .tooltip,
+.wrapper .blog:hover .tooltip::before {
   background-color: #333333;
   color: #ffffff;
 }

@@ -11,27 +11,27 @@ import {
   NavBtn,
   NavBtnLink,
 } from "./NavbarElements";
-const Navbar = () => {
+const Navbar = ({ toggle }: { toggle: any }) => {
   return (
     <>
       <Nav>
         <Logo src="./Upload.jpg" />
         <NavbarContainer>
-          <MobileLogo>
+          <MobileLogo onClick={toggle}>
             <FaBars />
           </MobileLogo>
           <NavMenu>
             <NavItem>
-              <NavLinks to="about">About</NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks to="discover">Discover</NavLinks>
+              <NavLinks to="courses">Courses</NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks to="units">Units</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="blog">Blog</NavLinks>
+              <NavLinks to="contact">Contact</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="about">About</NavLinks>
             </NavItem>
             <NavBtn>
               <NavBtnLink to="/signin">Sign In</NavBtnLink>
