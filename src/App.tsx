@@ -1,6 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import About from "./views/About";
 import "./App.scss";
+import Navbar from "./components/Navbar";
 
 // When the user scrolls down 50px from the top of the document, resize the header's font size
 window.onscroll = function () {
@@ -19,24 +21,11 @@ function scrollFunction() {
 function App() {
   return (
     <>
-      <div className="header">
-        <img src="Upload.jpg" />
-        <div className="header-right">
-          <a className="active" href="#home">
-            Home
-          </a>
-          <a href="#about">About</a>
-          <a href="#contact">Courses</a>
-          <a href="#contact">Unit</a>
-          <a href="#about">Blog</a>
-        </div>
-      </div>
+      <Router>
+        <Navbar></Navbar>
+      </Router>
 
       <body>
-        <h1>Hello World</h1>
-        <Router>
-          <Routes></Routes>
-        </Router>
         <div className="wrapper">
           <div className="icon facebook">
             <div className="tooltip">Facebook</div>
