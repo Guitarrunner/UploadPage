@@ -10,9 +10,6 @@ import {
   SidebarRoute,
 } from "./SidebarElements";
 
-interface props {
-  isOpen: boolean;
-}
 const Sidebar = ({ isOpen, toggle }: { isOpen: any; toggle: any }) => {
   return (
     <SidebarContainer o={(isOpen = { isOpen })} onClick={toggle}>

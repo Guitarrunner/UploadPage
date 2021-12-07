@@ -10,19 +10,18 @@ interface Props {
 }
 
 export const SidebarContainer = styled.aside<Props>`
-postion: fixed;
-z-index=999;
-width: 100%;
-height: 100%;
-background: #0d0d0d;
-display: grid;
-align-items: center;
-top:0;
-left:0;
-transition: 0.3s ease-in-out;
-opacity: ${(props) => (props.o?.isOpen ? "100%" : "0")};
-top: ${(props) => (props.o?.isOpen ? "100%" : "-100%")};
-
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background: #0d0d0d;
+  display: grid;
+  align-items: center;
+  top: 0;
+  left: 0;
+  transition: 0.3s ease-in-out;
+  opacity: ${(Props) => (Props.o?.isOpen ? "100%" : "0")};
+  top: ${(Props) => (Props.o?.isOpen ? "0" : "-100%")};
 `;
 
 export const CloseIcon = styled(FaTimes)`
@@ -48,6 +47,7 @@ export const SidebarMenu = styled.ul`
   grid-template-colums: 1fr;
   grid-template-rows: repeat(6, 80px);
   text-align: center;
+  justify-content: center;
 
   @media screen and (max-widht. 480px) {
     grid-template-rows: reapeat(6, 60px);
@@ -55,6 +55,7 @@ export const SidebarMenu = styled.ul`
 `;
 
 export const SidebarLink = styled(LinkScroll)`
+padding: 16px 64px;
 display: flex;
 align-items. center,
 justify-content: center;
@@ -72,7 +73,7 @@ cursor:pointer;
 }`;
 
 export const SideBtnWrap = styled.div`
-displat: flex,
+display: flex,
 justify-content: center;`;
 
 export const SidebarRoute = styled(LinkR)`

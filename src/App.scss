@@ -31,6 +31,7 @@ body {
   color: var(--color-white);
   trasnition: var(--speed-normal);
   border: 1px solid var(--color-red);
+
   &:hover {
     border: 1px solid transparent;
     background: var(--color-red) url(https://i.postimg.cc/wBXGXbWN/pixel.png); // 360px x 1080px
@@ -77,7 +78,7 @@ body {
   display: inline-block;
   right: 5vw;
   top: 20vh;
-  z-index: 10;
+  z-index: 2;
 }
 
 .wrapper .icon {
