@@ -30,18 +30,16 @@ export const Logo = styled.img`
   position: fixed;
   left: 5vw;
   top: 2vh;
-  width: 20vh;
-  height: 20vh;
+  width: 12vw;
+  height: 12vw;
   background: none;
   overflow: hidden;
   padding: 30px 10px;
   overflow: visible;
 
   @media screen and (max-width: 768px) {
-    Logo {
-      width: 18vh;
-      height: 18vh;
-    }
+    width: 18vh;
+    height: 18vh;
   }
 `;
 
