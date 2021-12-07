@@ -14,6 +14,20 @@ export const Nav = styled.nav`
     transition: 0.8s all ease;
   }
 `;
+export const Nav2 = styled.nav`
+  background-color: #01bf71;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  position: sticky;
+  z-index: 1;
+  top: 80px;
+  @media screen and (max-width: 960px) {
+    transition: 0.8s all ease;
+  }
+`;
 export const NavbarContainer = styled.div`
   display: flex;
   justify-content: flex-end;
@@ -27,12 +41,12 @@ export const NavbarContainer = styled.div`
 export const Logo = styled.img`
   position: fixed;
   left: 5vw;
-  top: 2vh;
-  width: 12vw;
-  height: 12vw;
+  top: 1vh;
+  width: 10vw;
+  height: 10vw;
   background: none;
   overflow: hidden;
-  padding: 30px 10px;
+  padding: 10px 10px;
   overflow: visible;
   z-index: 10;
 
