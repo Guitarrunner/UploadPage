@@ -8,14 +8,14 @@ window.onscroll = function () {
   scrollFunction();
 };
 
-function scrollFunction() {
+function scrollFunction() {} /*
   let xx = document.getElementById("header")!.style.backgroundColor;
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     xx = "white";
   } else {
     xx = "gray";
   }
-}
+}*/
 
 function App() {
   return (
@@ -23,42 +23,39 @@ function App() {
       <Router>
         <Home />
       </Router>
-
-      <body>
-        <div className="wrapper">
-          <div className="icon facebook">
-            <div className="tooltip">Facebook</div>
-            <span>
-              <i className="fab fa-facebook-f"></i>
-            </span>
-          </div>
-          <div className="icon twitter">
-            <div className="tooltip">Twitter</div>
-            <span>
-              <i className="fab fa-twitter"></i>
-            </span>
-          </div>
-          <div className="icon instagram">
-            <div className="tooltip">Instagram</div>
-            <span>
-              <i className="fab fa-instagram"></i>
-            </span>
-          </div>
-          <div className="icon blog">
-            <div className="tooltip">Blog</div>
-            <span>
-              <i className="fab fa-blogger"></i>
-            </span>
-          </div>
-          <div className="icon youtube">
-            <div className="tooltip">Youtube</div>
-            <span>
-              <i className="fab fa-youtube"></i>
-            </span>
-          </div>
+      <div className="wrapper">
+        <div className="icon facebook">
+          <div className="tooltip">Facebook</div>
+          <span>
+            <i className="fab fa-facebook-f"></i>
+          </span>
         </div>
-        <button className="al">Free Class</button>
-      </body>
+        <div className="icon twitter">
+          <div className="tooltip">Twitter</div>
+          <span>
+            <i className="fab fa-twitter"></i>
+          </span>
+        </div>
+        <div className="icon instagram">
+          <div className="tooltip">Instagram</div>
+          <span>
+            <i className="fab fa-instagram"></i>
+          </span>
+        </div>
+        <div className="icon blog">
+          <div className="tooltip">Blog</div>
+          <span>
+            <i className="fab fa-blogger"></i>
+          </span>
+        </div>
+        <div className="icon youtube">
+          <div className="tooltip">Youtube</div>
+          <span>
+            <i className="fab fa-youtube"></i>
+          </span>
+        </div>
+      </div>
+      <button className="al">Free Class</button>
     </>
   );
 }

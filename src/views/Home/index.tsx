@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Sidebar from "../../components/Sidebar";
+import InfoSection from "../InfoSection";
+import { homObjOne } from "../InfoSection/Data";
 
 const Home = () => {
   const [isOpen, setisOpen] = useState(false);
@@ -11,6 +13,7 @@ const Home = () => {
     <>
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
+      <InfoSection {...homObjOne} />
     </>
   );
 };
