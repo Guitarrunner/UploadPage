@@ -26,7 +26,7 @@ export const Button = styled(Link)<Props>`
   align-items: center:
   transition: all 0.2s ease-in-out;
 
-  &.hover{
+  &:hover{
       transition: all 0.2s ease-in-out;
       background:${(Props) => (Props.o?.primary ? "#fff" : "blue")};
   }

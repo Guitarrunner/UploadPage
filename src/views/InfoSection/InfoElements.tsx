@@ -22,7 +22,7 @@ interface Props {
 
 export const InfoContainer = styled.div<Props>`
   color: #fff;
-  background: ${(Props) => (Props.o?.lightBg ? "#fff" : "#010606")};
+  background: ${(Props) => (Props.o?.lightBg ? "#f9f9f9" : "#010606")};
 
   @media screen and (max-width: 760px) {
     padding: 100px 0;
@@ -32,21 +32,20 @@ export const InfoContainer = styled.div<Props>`
 export const InfoWrapper = styled.div`
 display:grid;
 z-index:1;
-height: 460px;
+height: 500px;
 widht: 100%
 max-width: 1100px;
 margin-right: auto;
 margin-left: auto;
 padding: 0 24px;
 justify-content: center
-@media screen and (max-width: 760px) {
-    height: 40vh;
-  }`;
+`;
 
 export const InfoRow = styled.div<Props>`
   display: grid;
-  grid-auto-colums: minmax(auto, 1fr);
+  grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
+  padding: 30px;
   grid-template-areas: ${(Props) =>
     Props.o?.imgStart ? `"col2 col1"` : `"col1 col2"`};
 
@@ -110,6 +109,7 @@ export const ImgWrap = styled.div`
 
 export const Img = styled.img`
   margin: 0 0 10px 0;
-  width: 100%;
+  width: 80%;
+  height: auto;
   padding-right: 0;
 `;

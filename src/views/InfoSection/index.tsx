@@ -47,7 +47,7 @@ const InfoSection = ({
 }) => {
   return (
     <>
-      <InfoContainer o={(id = { id })}>
+      <InfoContainer o={((id = { id }), (lightBg = { lightBg }))}>
         <InfoWrapper>
           <InfoRow o={(imgStart = { imgStart })}>
             <Column1>

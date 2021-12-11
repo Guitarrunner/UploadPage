@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import "./App.scss";
+import Footer from "./components/Footer";
 import Home from "./views/Home";
 
 // When the user scrolls down 50px from the top of the document, resize the header's font size
@@ -56,6 +57,7 @@ function App() {
         </div>
       </div>
       <button className="al">Free Class</button>
+      <Footer />
     </>
   );
 }

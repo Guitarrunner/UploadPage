@@ -100,7 +100,7 @@ export const NavLinks = styled(LinkScroll)`
 `;
 
 export const NavBtn = styled.nav`
-  display: felx;
+  display: flex;
   align-iems: center;
 
   @media screen and (max-width: 768px) {

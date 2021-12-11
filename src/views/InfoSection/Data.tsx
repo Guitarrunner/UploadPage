@@ -1,4 +1,5 @@
-import logo from "../../header.png";
+import top from "./top.svg";
+import youtube from "./youtube.svg";
 
 export const homObjOne = {
   id: "about",
@@ -10,7 +11,7 @@ export const homObjOne = {
   description: "This is a blank description",
   buttonLabel: "Sing in",
   imgStart: false,
-  img: logo,
+  img: top,
   alt: "test",
   dark: true,
   dark2: true,
@@ -21,17 +22,17 @@ export const homObjOne = {
 export const homObjTwo = {
   id: "about",
   lightBg: true,
-  lightText: true,
-  lightTextDesc: true,
+  lightText: false,
+  lightTextDesc: false,
   topLine: "About",
   headline: "Josue Araya",
   description: "This is a blank description",
   buttonLabel: "Sing in",
   imgStart: true,
-  img: logo,
+  img: youtube,
   alt: "test",
-  dark: false,
-  dark2: false,
-  primary: false,
-  darkText: true,
+  dark: true,
+  dark2: true,
+  primary: true,
+  darkText: false,
 };
