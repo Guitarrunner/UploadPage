@@ -12,8 +12,26 @@ export const homObjOne = {
   imgStart: false,
   img: logo,
   alt: "test",
+  dark: true,
+  dark2: true,
+  primary: true,
+  darkText: true,
+};
+
+export const homObjTwo = {
+  id: "about",
+  lightBg: true,
+  lightText: true,
+  lightTextDesc: true,
+  topLine: "About",
+  headline: "Josue Araya",
+  description: "This is a blank description",
+  buttonLabel: "Sing in",
+  imgStart: true,
+  img: logo,
+  alt: "test",
   dark: false,
   dark2: false,
-  primary: true,
+  primary: false,
   darkText: true,
 };

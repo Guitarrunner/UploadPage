@@ -41,7 +41,7 @@ const Navbar = ({ toggle }: { toggle: any }) => {
             </NavBtn>
           </NavMenu>
         </NavbarContainer>
-      </Nav>{" "}
+      </Nav>
       <Nav2 />
     </>
   );

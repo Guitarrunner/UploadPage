@@ -12,6 +12,7 @@ interface Props {
 export const SidebarContainer = styled.aside<Props>`
   position: fixed;
   z-index: 999;
+  top: -80px;
   width: 100%;
   height: 100%;
   background: #0d0d0d;

@@ -32,13 +32,16 @@ export const InfoContainer = styled.div<Props>`
 export const InfoWrapper = styled.div`
 display:grid;
 z-index:1;
-height; 860px;
+height: 460px;
 widht: 100%
 max-width: 1100px;
 margin-right: auto;
 margin-left: auto;
 padding: 0 24px;
-justify-content: center`;
+justify-content: center
+@media screen and (max-width: 760px) {
+    height: 40vh;
+  }`;
 
 export const InfoRow = styled.div<Props>`
   display: grid;
@@ -77,15 +80,16 @@ export const TopLine = styled.p`
   margin-bottom: 16px;
 `;
 export const Heading = styled.h1<Props>`
-margin-bottom: 24px;
-font-size: 48px;
-line-height: 1.1,
-font-weight: 600;
-color: ${(Props) => (Props.o?.lightText ? "#f7f8fa" : "#010606")};
+  margin-bottom: 24px;
+  font-size: 48px;
+  line-height: 1.1;
+  font-weight: 600;
+  color: ${(Props) => (Props.o?.lightText ? "#f7f8fa" : "#010606")};
 
-@media screen and (max-width: 760px) {
+  @media screen and (max-width: 760px) {
     font-size: 32px;
-  }`;
+  }
+`;
 
 export const Subtitle = styled.p<Props>`
   max-width: 440px;

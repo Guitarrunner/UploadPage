@@ -50,7 +50,7 @@ export const Logo = styled.img`
   overflow: visible;
   z-index: 10;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1000px) {
     width: 18vh;
     height: 18vh;
   }
