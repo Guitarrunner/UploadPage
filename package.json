@@ -46,6 +46,7 @@
     ]
   },
   "devDependencies": {
+    "@types/jquery": "^3.5.10",
     "@types/react-scroll": "^1.8.3",
     "@types/styled-components": "^5.1.17",
     "fa-icons": "^0.2.0",

@@ -38,7 +38,7 @@ export const Buttonn = styled.button<Props>`
     }
   }
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .al {
     width: 25vw;
     height: 10vw;

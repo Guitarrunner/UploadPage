@@ -36,6 +36,19 @@ const Footer = () => {
                 <FooterLink to="/sigin">Link</FooterLink>
                 <FooterLink to="/sigin">Link</FooterLink>
                 <FooterLink to="/sigin">Link</FooterLink>
+              </FooterLinkItems>
+              <FooterLinkItems>
+                <FooterLinkTitle>Where to find?</FooterLinkTitle>
+                <FooterLink to="/sigin">Link</FooterLink>
+                <FooterLink to="/sigin">Link</FooterLink>
+                <FooterLink to="/sigin">Link</FooterLink>
+                <FooterLink to="/sigin">Link</FooterLink>
+                <FooterLink to="/sigin">Link</FooterLink>
+              </FooterLinkItems>
+              <FooterLinkItems>
+                <FooterLinkTitle>More info</FooterLinkTitle>
+                <FooterLink to="/sigin">Link</FooterLink>
+                <FooterLink to="/sigin">Link</FooterLink>
                 <FooterLink to="/sigin">Link</FooterLink>
               </FooterLinkItems>
             </FooterLinksWrapper>
