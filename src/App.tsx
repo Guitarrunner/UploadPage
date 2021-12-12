@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.scss";
 import { Buttonn } from "./components/Buttonclass/ButtonclassElements";
 import Footer from "./components/Footer";
 import Home from "./views/Home";
+import SignIn from "./views/SignIn";
 
 // When the user scrolls down 50px from the top of the document, resize the header's font size
 window.onscroll = function () {
