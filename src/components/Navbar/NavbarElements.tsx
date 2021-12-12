@@ -10,8 +10,20 @@ export const Nav = styled.nav`
   font-size: 1rem;
   position: sticky;
   top: 0;
-  z-index: 10;
-
+  @media screen and (max-width: 960px) {
+    transition: 0.8s all ease;
+  }
+`;
+export const Nav2 = styled.nav`
+  background-color: #01bf71;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  position: sticky;
+  z-index: 1;
+  top: 80px;
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
   }
@@ -29,19 +41,18 @@ export const NavbarContainer = styled.div`
 export const Logo = styled.img`
   position: fixed;
   left: 5vw;
-  top: 2vh;
-  width: 20vh;
-  height: 20vh;
+  top: 1vh;
+  width: 10vw;
+  height: 10vw;
   background: none;
   overflow: hidden;
-  padding: 30px 10px;
+  padding: 10px 10px;
   overflow: visible;
+  z-index: 10;
 
-  @media screen and (max-width: 768px) {
-    Logo {
-      width: 18vh;
-      height: 18vh;
-    }
+  @media screen and (max-width: 1000px) {
+    width: 17vh;
+    height: 17vh;
   }
 `;
 
@@ -89,7 +100,7 @@ export const NavLinks = styled(LinkScroll)`
 `;
 
 export const NavBtn = styled.nav`
-  display: felx;
+  display: flex;
   align-iems: center;
 
   @media screen and (max-width: 768px) {

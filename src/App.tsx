@@ -1,31 +1,39 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import About from "./views/About";
 import "./App.scss";
-import Navbar from "./components/Navbar";
+import { Buttonn } from "./components/Buttonclass/ButtonclassElements";
+import Footer from "./components/Footer";
+import Home from "./views/Home";
+import SignIn from "./views/SignIn";
 
 // When the user scrolls down 50px from the top of the document, resize the header's font size
 window.onscroll = function () {
   scrollFunction();
 };
 
-function scrollFunction() {
+function scrollFunction() {} /*
   let xx = document.getElementById("header")!.style.backgroundColor;
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     xx = "white";
   } else {
     xx = "gray";
   }
-}
+}*/
 
 function App() {
+  let scrollNav;
+  if (document.body.scrollTop > 50) {
+    scrollNav = true;
+  } else {
+    scrollNav = false;
+  }
+
   return (
     <>
       <Router>
-        <Navbar></Navbar>
+        <Home />
       </Router>
-
-      <body>
+      <div>
         <div className="wrapper">
           <div className="icon facebook">
             <div className="tooltip">Facebook</div>
@@ -45,10 +53,10 @@ function App() {
               <i className="fab fa-instagram"></i>
             </span>
           </div>
-          <div className="icon github">
-            <div className="tooltip">Github</div>
+          <div className="icon blog">
+            <div className="tooltip">Blog</div>
             <span>
-              <i className="fab fa-github"></i>
+              <i className="fab fa-blogger"></i>
             </span>
           </div>
           <div className="icon youtube">
@@ -58,8 +66,9 @@ function App() {
             </span>
           </div>
         </div>
-        <button className="al">Free Class</button>
-      </body>
+        <Buttonn o={(scrollNav = { scrollNav })}>Free Class</Buttonn>
+      </div>
+      <Footer />
     </>
   );
 }
