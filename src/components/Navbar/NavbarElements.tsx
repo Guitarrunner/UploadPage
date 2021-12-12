@@ -51,8 +51,8 @@ export const Logo = styled.img`
   z-index: 10;
 
   @media screen and (max-width: 1000px) {
-    width: 18vh;
-    height: 18vh;
+    width: 17vh;
+    height: 17vh;
   }
 `;
 

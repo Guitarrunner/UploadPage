@@ -43,7 +43,7 @@ const Footer = () => {
           <SocialMedia>
             <SocialMediaWrap>
               <WebsiteRights>
-                UPLOAD ® {new Date().getFullYear()} All rights reserved
+                UPLOAD © {new Date().getFullYear()} All rights reserved
               </WebsiteRights>
               <SocialLogo to="/">UPLOAD</SocialLogo>
 

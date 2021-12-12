@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "../ButtonElement/ButtonElements";
 import {
   SidebarContainer,
   Icon,
@@ -35,9 +36,9 @@ const Sidebar = ({ isOpen, toggle }: { isOpen: any; toggle: any }) => {
           </SidebarLink>
 
           <SideBtnWrap>
-            <SidebarRoute to="/singin" onClick={toggle}>
+            <Button to="/singin" onClick={toggle}>
               Sign In
-            </SidebarRoute>
+            </Button>
           </SideBtnWrap>
         </SidebarMenu>
       </SidebarWrapper>

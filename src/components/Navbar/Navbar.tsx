@@ -10,16 +10,11 @@ import {
   NavMenu,
   NavLinks,
   NavBtn,
-  NavBtnLink,
   Nav2,
 } from "./NavbarElements";
 import { Button } from "../ButtonElement/ButtonElements";
 
 const Navbar = ({ toggle }: { toggle: any }) => {
-  let primary, dark, dark2;
-  primary = false;
-  dark = false;
-  dark2 = false;
   return (
     <>
       <Logo src={logo} />
