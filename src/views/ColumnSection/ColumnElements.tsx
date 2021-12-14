@@ -6,13 +6,15 @@ export const ColumnContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #010606;
+  background: #04c4d9;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1200px) {
+    transition: all 0.2s ease-in-out;
     height: 1100px;
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 700px) {
+    transition: all 0.2s ease-in-out;
     height: 1300px;
   }
 `;
@@ -26,11 +28,11 @@ export const ColumnWrapper = styled.div`
   grid-gap: 16px;
   padding: 0 50px;
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1200px) {
     grid-template-columns: 1fr 1fr;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 700px) {
     grid-template-columns: 1fr;
     padding: 0 20px;
   }
@@ -41,6 +43,7 @@ background: #fff;
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
+align-items: center;
 border-radius: 10px;
 max-height: 340px;
 padding: 30px;
@@ -61,8 +64,9 @@ export const ColumnIcon = styled.img`
 
 export const ColumnH1 = styled.h1`
   font-size: 2.5rem;
-  color: #fff;
-  margin-bottom: 64px;
+  color: #101522;
+  margin-top: 16px;
+  margin-bottom: 32px;
 
   @media screen and (max-width: 480px) {
     font-size: 2rem;
@@ -78,5 +82,14 @@ export const ColumnH2 = styled.h2`
 export const ColumnP = styled.p`
   font-size: 1rem;
   text-align: center;
+  }
+`;
+
+export const ColumnP2 = styled.p`
+color: #101522;
+width: 70vw;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 32px;
   }
 `;

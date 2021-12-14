@@ -14,7 +14,7 @@ export const Buttonn = styled.button<Props>`
   margin: 20px;
   line-height: 110%;
   letter-spacing: 2px;
-  background-color: rgb(70, 148, 226);
+  background-color: #101522;
   align-items: center;
   text-decoration: none;
   text-transform: uppercase;

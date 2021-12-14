@@ -14,6 +14,7 @@ import {
   WebsiteRights,
   SocialIcons,
   SocialIconLink,
+  FooterP,
 } from "./FooterElements";
 const Footer = () => {
   return (
@@ -23,40 +24,38 @@ const Footer = () => {
           <FooterLinksContainer>
             <FooterLinksWrapper>
               <FooterLinkItems>
-                <FooterLinkTitle>About Us</FooterLinkTitle>
-                <FooterLink to="/sigin">Link</FooterLink>
-                <FooterLink to="/sigin">Link</FooterLink>
-                <FooterLink to="/sigin">Link</FooterLink>
-                <FooterLink to="/sigin">Link</FooterLink>
-                <FooterLink to="/sigin">Link</FooterLink>
+                <FooterLinkTitle>Cursos</FooterLinkTitle>
+                <FooterLink to="/">Robótica</FooterLink>
+                <FooterLink to="/">Youtuber</FooterLink>
+                <FooterLink to="/">MineMods</FooterLink>
+                <FooterLink to="/">Games 2D</FooterLink>
+                <FooterLink to="/">Games 3D</FooterLink>
+                <FooterLink to="/">Artes digitais</FooterLink>
+                <FooterLink to="/">Edição de vídeo</FooterLink>
+                <FooterLink to="/">Criação de sites</FooterLink>
+                <FooterLink to="/">Desenvolvimento de aplicativos</FooterLink>
               </FooterLinkItems>
               <FooterLinkItems>
-                <FooterLinkTitle>Courses</FooterLinkTitle>
-                <FooterLink to="/sigin">Link</FooterLink>
-                <FooterLink to="/sigin">Link</FooterLink>
-                <FooterLink to="/sigin">Link</FooterLink>
-                <FooterLink to="/sigin">Link</FooterLink>
+                <FooterLinkTitle>Contate-nos</FooterLinkTitle>
+                <FooterP>Tel: (71) 3506-3604</FooterP>
+                <FooterP>WhatsApp: (71) 99377-6497</FooterP>
+                <FooterP>Email: escolaupload@gmail.com</FooterP>
               </FooterLinkItems>
               <FooterLinkItems>
-                <FooterLinkTitle>Where to find?</FooterLinkTitle>
-                <FooterLink to="/sigin">Link</FooterLink>
-                <FooterLink to="/sigin">Link</FooterLink>
-                <FooterLink to="/sigin">Link</FooterLink>
-                <FooterLink to="/sigin">Link</FooterLink>
-                <FooterLink to="/sigin">Link</FooterLink>
-              </FooterLinkItems>
-              <FooterLinkItems>
-                <FooterLinkTitle>More info</FooterLinkTitle>
-                <FooterLink to="/sigin">Link</FooterLink>
-                <FooterLink to="/sigin">Link</FooterLink>
-                <FooterLink to="/sigin">Link</FooterLink>
+                <FooterLinkTitle>Unidades</FooterLinkTitle>
+                <FooterLink to="/">Salvador - Imbuí</FooterLink>
+                <FooterLink to="/">Salvador - Brotas</FooterLink>
+                <FooterLink to="/">Jequié</FooterLink>
+                <FooterLink to="/">Ilhéus</FooterLink>
+                <FooterLink to="/">Pindamonhangaba</FooterLink>
               </FooterLinkItems>
             </FooterLinksWrapper>
           </FooterLinksContainer>
           <SocialMedia>
             <SocialMediaWrap>
               <WebsiteRights>
-                UPLOAD © {new Date().getFullYear()} All rights reserved
+                UPLOAD © {new Date().getFullYear()}
+                Todos os direitos reservados
               </WebsiteRights>
               <SocialLogo to="/">UPLOAD</SocialLogo>
 

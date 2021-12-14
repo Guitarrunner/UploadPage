@@ -25,16 +25,16 @@ const Navbar = ({ toggle }: { toggle: any }) => {
           </MobileLogo>
           <NavMenu>
             <NavItem>
-              <NavLinks to="courses">Courses</NavLinks>
+              <NavLinks to="courses">Cursos</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="units">Units</NavLinks>
+              <NavLinks to="units">Unidades</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="contact">Contact</NavLinks>
+              <NavLinks to="contact">Contato</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="about">About</NavLinks>
+              <NavLinks to="about">Sobre nós</NavLinks>
             </NavItem>
             <NavBtn>
               <Button
@@ -44,7 +44,7 @@ const Navbar = ({ toggle }: { toggle: any }) => {
                 spy={true}
                 offset={-80}
               >
-                Sign In
+                Cadastre-se
               </Button>
             </NavBtn>
           </NavMenu>

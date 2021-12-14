@@ -13,7 +13,7 @@ interface Props {
 
 export const Button = styled(Link)<Props>`
   border-radius: 50px;
-  background: ${(Props) => (Props.o?.primary ? "#01bf71" : "green")};
+  background: ${(Props) => (Props.o?.primary ? "#01bf71" : "#101522")};
   white-space: nowrap;
   padding: ${(Props) => (Props.o?.big ? `14px 48px` : `12px 30px`)};
   color: ${(Props) => (Props.o?.dark ? "#010606" : "#fff")};
@@ -28,6 +28,6 @@ export const Button = styled(Link)<Props>`
 
   &:hover{
       transition: all 0.2s ease-in-out;
-      background:${(Props) => (Props.o?.primary ? "#fff" : "blue")};
+      background:${(Props) => (Props.o?.primary ? "#fff" : "#3aa4b0")};
   }
 `;

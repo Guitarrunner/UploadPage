@@ -30,7 +30,7 @@
   position: fixed;
   display: inline-block;
   right: 5vw;
-  top: 20vh;
+  top: 25vh;
   z-index: 2;
 }
 
@@ -97,10 +97,10 @@
   color: #ffffff;
 }
 
-.wrapper .twitter:hover,
-.wrapper .twitter:hover .tooltip,
-.wrapper .twitter:hover .tooltip::before {
-  background-color: #46c1f6;
+.wrapper .whatsapp:hover,
+.wrapper .whatsapp:hover .tooltip,
+.wrapper .whatsapp:hover .tooltip::before {
+  background-color: #0ccc56;
   color: #ffffff;
 }
 

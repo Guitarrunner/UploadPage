@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
 import "./App.scss";
 import { Buttonn } from "./components/Buttonclass/ButtonclassElements";
 import Footer from "./components/Footer";
@@ -41,10 +41,10 @@ function App() {
               <i className="fab fa-facebook-f"></i>
             </span>
           </div>
-          <div className="icon twitter">
-            <div className="tooltip">Twitter</div>
+          <div className="icon whatsapp">
+            <div className="tooltip">WhatsApp</div>
             <span>
-              <i className="fab fa-twitter"></i>
+              <i className="fab fa-whatsapp"></i>
             </span>
           </div>
           <div className="icon instagram">
@@ -66,7 +66,7 @@ function App() {
             </span>
           </div>
         </div>
-        <Buttonn o={(scrollNav = { scrollNav })}>Free Class</Buttonn>
+        <Buttonn o={(scrollNav = { scrollNav })}>Aula grátis</Buttonn>
       </div>
       <Footer />
     </>

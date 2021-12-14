@@ -33,16 +33,18 @@ export const FooterLinksWrapper = styled.div`
 export const FooterLinkItems = styled.div`
 display: flex;
 flex-direction: column;
-align-items: flex-start;
+justify-items: flex-start;
+align-items: center;
 margin: 16px;
 text-align: left;
-width: 160px;
+width: 200px;
 box-sizing: border-box;
 color #fff;
  @media screen and (max-width: 420px) {
      margin: 0;
      padding: 10px;
      widht: 100%;
+     justify-items:center;
   }`;
 
 export const FooterLinkTitle = styled.h1`
@@ -61,6 +63,19 @@ cursor: pointer;
     color:#01bf71;
     transition: 0.3s ease-out;
 }`;
+
+export const FooterP = styled.p`
+color: #fff;
+text-decoration: none
+margin-bottom: 0.5rem;
+font-size: 14px;
+cursor: pointer;
+
+&:hover{
+    color:#01bf71;
+    transition: 0.3s ease-out;
+}`;
+
 export const SocialMedia = styled.section`
   max-widht: 1000px;
   width: 100%;

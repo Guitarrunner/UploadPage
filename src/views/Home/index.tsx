@@ -4,7 +4,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import Sidebar from "../../components/Sidebar";
 import ColumnSection from "../ColumnSection";
 import InfoSection from "../InfoSection";
-import { homObjOne, homObjTwo } from "../InfoSection/Data";
+import { homObjOne, homObjThree, homObjTwo } from "../InfoSection/Data";
 
 const Home: FunctionComponent = () => {
   const [isOpen, setisOpen] = useState(false);
@@ -16,10 +16,9 @@ const Home: FunctionComponent = () => {
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <InfoSection {...homObjOne} />
-      <InfoSection {...homObjTwo} />
       <ColumnSection />
       <InfoSection {...homObjTwo} />
-      <InfoSection {...homObjOne} />
+      <InfoSection {...homObjThree} />
     </>
   );
 };
