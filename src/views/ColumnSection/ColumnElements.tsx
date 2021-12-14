@@ -64,7 +64,7 @@ export const ColumnIcon = styled.img`
 
 export const ColumnH1 = styled.h1`
   font-size: 2.5rem;
-  color: #101522;
+  color: #fff;
   margin-top: 16px;
   margin-bottom: 32px;
 
@@ -77,11 +77,13 @@ export const ColumnH2 = styled.h2`
   font-size: 1rem;
   text-align: center;
   margin-bottom: 10px;
+  color: #101522;
 `;
 
 export const ColumnP = styled.p`
   font-size: 1rem;
   text-align: center;
+  color: #101522;
   }
 `;
 

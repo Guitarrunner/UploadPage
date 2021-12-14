@@ -73,7 +73,7 @@ export const TextWrapper = styled.div`
   paddig-bottom: 60px;
 `;
 export const TopLine = styled.p<Props>`
-  color: ${(Props) => (Props.o?.lightText ? "#101522" : "#010606")};
+  color: ${(Props) => (Props.o?.lightText ? "#fff" : "#04C4D9")};
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;

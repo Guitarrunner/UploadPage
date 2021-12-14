@@ -50,6 +50,7 @@ color #fff;
 export const FooterLinkTitle = styled.h1`
   font-size: 14px;
   margin-bottom: 16px;
+  color: #04c4d9;
 `;
 
 export const FooterLink = styled(Link)`
@@ -60,7 +61,7 @@ font-size: 14px;
 cursor: pointer;
 
 &:hover{
-    color:#01bf71;
+    color:#04C4D9;
     transition: 0.3s ease-out;
 }`;
 
@@ -72,7 +73,7 @@ font-size: 14px;
 cursor: pointer;
 
 &:hover{
-    color:#01bf71;
+    color:#04C4D9;
     transition: 0.3s ease-out;
 }`;
 
