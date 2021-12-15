@@ -23,24 +23,26 @@ interface Props {
 export const InfoContainer = styled.div<Props>`
   color: #fff;
   background: ${(Props) => (Props.o?.lightBg ? "#f9f9f9" : "#04C4D9")};
+  width: 100%;
+  overflow-x: hidden;
 
+  overflow-y: hidden;
   @media screen and (max-width: 760px) {
     padding: 50px 0;
   }
 `;
 
 export const InfoWrapper = styled.div`
-display:grid;
-z-index:1;
-height: 500px;
-widht: 100%
-max-width: 1100px;
-margin-right: auto;
-margin-left: auto;
-padding: 0 24px;
-justify-content: center;
- @media screen and (max-width: 1000px) {
-   transition: all 0.2s ease-in-out;
+  display: grid;
+  z-index: 1;
+  height: 500px;
+  max-width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 24px;
+  justify-content: center;
+  @media screen and (max-width: 1000px) {
+    transition: all 0.2s ease-in-out;
     height: 100vh;
   }
 `;

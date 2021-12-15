@@ -4,6 +4,8 @@ import Navbar from "../../components/Navbar/Navbar";
 import Sidebar from "../../components/Sidebar";
 import ColumnSection from "../ColumnSection";
 import InfoSection from "../InfoSection";
+import Carrousel from "../Carrousel";
+import Video from "../Video";
 import { homObjOne, homObjThree, homObjTwo } from "../InfoSection/Data";
 
 const Home: FunctionComponent = () => {
@@ -15,10 +17,12 @@ const Home: FunctionComponent = () => {
     <>
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Carrousel />
       <InfoSection {...homObjOne} />
       <ColumnSection />
       <InfoSection {...homObjTwo} />
       <InfoSection {...homObjThree} />
+      <Video />
     </>
   );
 };

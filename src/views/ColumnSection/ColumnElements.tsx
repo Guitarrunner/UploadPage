@@ -4,8 +4,13 @@ export const ColumnContainer = styled.div`
   height: 500px;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
+
+  overflow-y: hidden;
+  width: 100%;
   justify-content: center;
   align-items: center;
+
   background: #04c4d9;
 
   @media screen and (max-width: 1200px) {
@@ -39,7 +44,7 @@ export const ColumnWrapper = styled.div`
 `;
 
 export const ColumCard = styled.div`
-background: #fff;
+background: #f9f9f9;
 display: flex;
 flex-direction: column;
 justify-content: flex-start;

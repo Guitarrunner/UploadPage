@@ -3,6 +3,7 @@ import { Link } from "react-scroll";
 
 export const FooterContainer = styled.footer`
   background-color: #101522;
+  width: 100%;
 `;
 
 export const FooterWrap = styled.div`
@@ -37,7 +38,7 @@ justify-items: flex-start;
 align-items: center;
 margin: 16px;
 text-align: left;
-width: 200px;
+width: 250px;
 box-sizing: border-box;
 color #fff;
  @media screen and (max-width: 420px) {

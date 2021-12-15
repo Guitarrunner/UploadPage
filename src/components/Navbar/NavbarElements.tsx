@@ -1,13 +1,27 @@
 import styled from "styled-components";
 import { Link as LinkScroll } from "react-scroll";
 import { Link as LinkR } from "react-router-dom";
+
+export const NavbarBigContainer = styled.nav`
+  height: 160px;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  overflow-x: hidden;
+  z-index: 5;
+  @media screen and (max-width: 960px) {
+    transition: 0.8s all ease;
+  }
+`;
 export const Nav = styled.nav`
   background-color: #04c4d9;
   height: 80px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1rem;
+  z-index: 5;
   position: sticky;
   top: 0;
   @media screen and (max-width: 960px) {
@@ -18,21 +32,24 @@ export const Nav2 = styled.nav`
   background-color: #101522;
   height: 80px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  justify-content: right;
+  align-items: right;
   font-size: 1rem;
+
   position: sticky;
-  z-index: 1;
+  z-index: 5;
   top: 80px;
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
   }
 `;
+
 export const NavbarContainer = styled.div`
   display: flex;
   justify-content: flex-end;
   height: 80px;
-  z-index: 1;
+  z-index: 5;
   width: 100%;
   padding: 0 24px;
   max-width: 1100px;
@@ -40,8 +57,8 @@ export const NavbarContainer = styled.div`
 
 export const Logo = styled.img`
   position: fixed;
-  left: 5vw;
-  top: 1vh;
+  left: 8vw;
+  top: 0.1vh;
   width: 10vw;
   height: 10vw;
   background: none;
@@ -101,7 +118,7 @@ export const NavLinks = styled(LinkScroll)`
 
 export const NavBtn = styled.nav`
   display: flex;
-  align-iems: center;
+  align-items: center;
 
   @media screen and (max-width: 768px) {
     display: none;

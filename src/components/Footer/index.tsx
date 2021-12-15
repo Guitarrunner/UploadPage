@@ -44,7 +44,7 @@ const Footer = () => {
               <FooterLinkItems>
                 <FooterLinkTitle>Unidades</FooterLinkTitle>
                 <FooterLink to="/">Salvador - Imbuí</FooterLink>
-                <FooterLink to="/">Salvador - Brotas</FooterLink>
+                <FooterLink to="/">Salvador - Pituba</FooterLink>
                 <FooterLink to="/">Jequié</FooterLink>
                 <FooterLink to="/">Ilhéus</FooterLink>
                 <FooterLink to="/">Pindamonhangaba</FooterLink>

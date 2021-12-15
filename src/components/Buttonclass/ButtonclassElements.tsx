@@ -4,24 +4,37 @@ interface Props {
     scrollNav?: any;
   };
 }
+
+export const NavBtn2 = styled.nav`
+  display: flex;
+  align-items: right;
+  margin-right: 2vw;
+`;
+
 export const Buttonn = styled.button<Props>`
   display: ${(Props) => (Props.o?.scrollNav ? `none` : `content`)};
-  position: fixed;
-  top: 85vh;
-  right: 5vw;
-  width: 15vw;
-  height: 7vh;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 14px 48px;
+  display: flex;
+  z-index:10;
+  white-space: nowrap;
   margin: 20px;
   line-height: 110%;
   letter-spacing: 2px;
-  background-color: #101522;
+  background-color: #F57C00;
   align-items: center;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
   color: var(--color-white);
-  trasnition: var(--speed-normal);
+  transition: var(--speed-normal);
   border: 1px solid var(--color-red);
+
+  @media screen and (max-width: 768px) {
+     padding: 14px 24px;
+  }
 
   &:hover {
     border: 1px solid transparent;
@@ -38,12 +51,8 @@ export const Buttonn = styled.button<Props>`
     }
   }
 }
-@media screen and (max-width: 768px) {
-  .al {
-    width: 25vw;
-    height: 10vw;
-  }
-}
+
+
 
 @keyframes animate {
   0% {

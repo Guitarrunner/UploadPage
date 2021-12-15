@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import "./App.scss";
-import { Buttonn } from "./components/Buttonclass/ButtonclassElements";
 import Footer from "./components/Footer";
 import Home from "./views/Home";
 import SignIn from "./views/SignIn";
@@ -66,7 +65,6 @@ function App() {
             </span>
           </div>
         </div>
-        <Buttonn o={(scrollNav = { scrollNav })}>Aula grátis</Buttonn>
       </div>
       <Footer />
     </>
