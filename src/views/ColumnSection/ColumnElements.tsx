@@ -75,6 +75,7 @@ export const ColumnH1 = styled.h1`
 
   @media screen and (max-width: 480px) {
     font-size: 2rem;
+    margin-left: -30%;
   }
 `;
 
@@ -89,6 +90,7 @@ export const ColumnP = styled.p`
   font-size: 1rem;
   text-align: center;
   color: #101522;
+  
   }
 `;
 
@@ -98,5 +100,10 @@ width: 70vw;
   font-size: 1rem;
   text-align: center;
   margin-bottom: 32px;
+  @media screen and (max-width: 760px) {
+    margin-left: -10%;
+    text-align: left;
+    max-width: 230px;
+  }
   }
 `;

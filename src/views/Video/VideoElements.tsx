@@ -35,7 +35,8 @@ export const VideoWrapper = styled.div`
   @media screen and (max-width: 760px) {
     transition: all 0.2s ease-in-out;
     margin-top: 5px;
-    height: 80vh;
+    margin-left: -25%;
+    height: 70vh;
   }
 `;
 
@@ -44,7 +45,9 @@ export const Heading = styled.h1`
   line-height: 1.1;
   font-weight: 600;
   text-align: center;
-  color: "#101522" @media screen and (max-width: 760px) {
+  color: "#101522";
+  @media screen and (max-width: 760px) {
+    text-align: left;
     font-size: 32px;
   }
 `;

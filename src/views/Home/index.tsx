@@ -7,6 +7,7 @@ import InfoSection from "../InfoSection";
 import Carrousel from "../Carrousel";
 import Video from "../Video";
 import { homObjOne, homObjThree, homObjTwo } from "../InfoSection/Data";
+import { CarrouselData } from "../Carrousel/CarrouselData";
 
 const Home: FunctionComponent = () => {
   const [isOpen, setisOpen] = useState(false);
@@ -17,7 +18,7 @@ const Home: FunctionComponent = () => {
     <>
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
-      <Carrousel />
+      <Carrousel slides={CarrouselData} />
       <InfoSection {...homObjOne} />
       <ColumnSection />
       <InfoSection {...homObjTwo} />

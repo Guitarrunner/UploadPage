@@ -57,6 +57,7 @@ export const InfoRow = styled.div<Props>`
 
   @media screen and (max-width: 760px) {
     grid-template-areas: "col1 col1" "col2 col2";
+    margin-left: -10%;
   }
 `;
 export const Column1 = styled.div`
@@ -73,6 +74,9 @@ export const TextWrapper = styled.div`
   max-width: 600px;
   paddig-top: auto;
   paddig-bottom: 60px;
+  @media screen and (max-width: 760px) {
+    max-width: 270px;
+  }
 `;
 export const TopLine = styled.p<Props>`
   color: ${(Props) => (Props.o?.lightText ? "#fff" : "#04C4D9")};
