@@ -2,16 +2,10 @@ import styled from "styled-components";
 import { IoMdArrowRoundForward } from "react-icons/io";
 import { IoArrowForward, IoArrowBack } from "react-icons/io5";
 
-interface Props {
-  o?: {
-    id?: string;
-  };
-}
-
 export const CarouselSection = styled.section`
   background: #04c4d9;
   margin-top: 150px;
-  height: 500px;
+  height: 510px;
   overflow: hidden;
 
   @media screen and (max-width: 760px) {
@@ -22,7 +16,7 @@ export const CarouselSection = styled.section`
 export const CarouselWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 500px;
+  height: 510px;
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
@@ -58,7 +52,7 @@ height:100%;
   overflow:hidden;
   opacity: 0.4;
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 400px) {
     top: 25%;
     left: 7%;
   }
@@ -109,7 +103,7 @@ export const CarouselP = styled.p`
   font-weight: 550;
   text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
   color: #000;
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 400px) {
     margin-top: -15%;
   }
 `;
@@ -124,7 +118,11 @@ export const CarouselButtons = styled.button`
   align-items: center;
   background: none;
   z-index: 4;
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 700px) {
+    bottom: 5%;
+    left: 47%;
+  }
+  @media screen and (max-width: 400px) {
     bottom: 10%;
     left: 30%;
   }

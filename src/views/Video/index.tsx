@@ -1,7 +1,6 @@
 import React from "react";
-import ReactPlayer from "react-player";
 import { Heading } from "../InfoSection/InfoElements";
-import { VideoContainer, VideoWrapper } from "./VideoElements";
+import { VideoContainer, VideoWrapper, Player } from "./VideoElements";
 
 const Video = () => {
   return (
@@ -9,11 +8,13 @@ const Video = () => {
       <VideoContainer>
         <VideoWrapper>
           <Heading>Veja-nos em ação</Heading>
-          <ReactPlayer
+          <Player
             url="videos/upload.mp4"
             controls={true}
             pip
             volume={0.3}
+            width={"70vw"}
+            height={"50vh"}
           />
         </VideoWrapper>
       </VideoContainer>

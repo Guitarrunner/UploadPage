@@ -1,10 +1,39 @@
-import { FunctionComponent } from "react";
+import logo from "./Upload.png";
+import {
+  Container,
+  Form,
+  FormButton,
+  FormContent,
+  FormH1,
+  FormInput,
+  FormLabel,
+  FormWrap,
+  Logo,
+  Text,
+} from "./SignInElements";
+import ScrollToTop from "../ScrollToTop";
 
-const SignIn: FunctionComponent = () => {
+const SignIn = () => {
   return (
-    <div>
-      <h1>Sign in page</h1>
-    </div>
+    <>
+      <ScrollToTop />
+      <Container>
+        <FormWrap>
+          <Logo src={logo} />
+          <FormContent>
+            <Form action="#">
+              <FormH1>Faça login em sua conta</FormH1>
+              <FormLabel htmlFor="for">Email</FormLabel>
+              <FormInput type="email" required></FormInput>
+              <FormLabel htmlFor="for">Senha</FormLabel>
+              <FormInput type="password" required></FormInput>
+              <FormButton type="submit">Prosseguir</FormButton>
+              <Text>Esqueceu a senha</Text>
+            </Form>
+          </FormContent>
+        </FormWrap>
+      </Container>
+    </>
   );
 };
 

@@ -57,6 +57,8 @@ export const InfoRow = styled.div<Props>`
 
   @media screen and (max-width: 760px) {
     grid-template-areas: "col1 col1" "col2 col2";
+  }
+  @media screen and (max-width: 400px) {
     margin-left: -10%;
   }
 `;
@@ -74,7 +76,7 @@ export const TextWrapper = styled.div`
   max-width: 600px;
   paddig-top: auto;
   paddig-bottom: 60px;
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 400px) {
     max-width: 270px;
   }
 `;
@@ -94,7 +96,7 @@ export const Heading = styled.h1<Props>`
   font-weight: 600;
   color: ${(Props) => (Props.o?.lightText ? "#101522" : "#010606")};
 
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 400px) {
     font-size: 32px;
   }
 `;

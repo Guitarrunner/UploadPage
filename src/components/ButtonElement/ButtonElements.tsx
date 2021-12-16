@@ -28,6 +28,6 @@ export const Button = styled(Link)<Props>`
 
   &:hover{
       transition: all 0.2s ease-in-out;
-      background:${(Props) => (Props.o?.primary ? "#fff" : "#3aa4b0")};
+      background:${(Props) => (Props.o?.primary ? "#fff" : "#F57C00")};
   }
 `;

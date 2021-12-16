@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.scss";
 import Footer from "./components/Footer";
 import Home from "./views/Home";
@@ -20,17 +20,11 @@ function scrollFunction() {} /*
 }*/
 
 function App() {
-  let scrollNav;
-  if (document.body.scrollTop > 50) {
-    scrollNav = true;
-  } else {
-    scrollNav = false;
-  }
-
   return (
     <>
       <Router>
         <Home />
+        <SignIn />
       </Router>
       <div>
         <div className="wrapper">
