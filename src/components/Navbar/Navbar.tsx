@@ -44,15 +44,7 @@ const Navbar = ({ toggle }: { toggle: any }) => {
                 <NavLinks to="about">Sobre nós</NavLinks>
               </NavItem>
               <NavBtn>
-                <Button
-                  to="/signin"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  offset={-80}
-                >
-                  Cadastre-se
-                </Button>
+                <Button to="/signin">Cadastre-se</Button>
               </NavBtn>
             </NavMenu>
           </NavbarContainer>

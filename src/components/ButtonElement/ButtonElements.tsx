@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { Link } from "react-scroll";
 
+import { Link as LinkR } from "react-router-dom";
+
 interface Props {
   o?: {
     primary?: boolean;
@@ -11,7 +13,7 @@ interface Props {
   };
 }
 
-export const Button = styled(Link)<Props>`
+export const Button = styled(LinkR)<Props>`
   border-radius: 50px;
   background: ${(Props) => (Props.o?.primary ? "#01bf71" : "#101522")};
   white-space: nowrap;

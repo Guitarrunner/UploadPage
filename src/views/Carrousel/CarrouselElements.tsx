@@ -32,6 +32,7 @@ export const CarouselSlide = styled.div`
   z-index: 1;
   width: 100%;
   height: 100%;
+  transition: all 0.2s ease-in-out;
 `;
 
 export const CarouselSlider = styled.div`

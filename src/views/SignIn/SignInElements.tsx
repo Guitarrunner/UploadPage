@@ -10,17 +10,18 @@ right: 0;
 top:0;
 z-index:0;
 overflow: hidden;
-background: linear-gradient(108deg, rgba(1,147,86,1) 0%,rgba(10,201,122,1) 100%);
+background: #04c4d9;
 `;
 
 export const FormWrap = styled.div`
   heigth: 100%;
   display: flex;
+  margin-top: 5%;
   flex-direction: column;
   justify-content: center;
-
-  @media screaan and (max-width: 400px) {
-    height: 80%;
+  @media screen and (max-width: 900px) {
+    margin-top: 30%;
+    margin-left: -15%;
   }
 `;
 
@@ -54,8 +55,9 @@ export const FormContent = styled.div`
 `;
 
 export const Form = styled.form`
-  background: #010101;
+  background: #101522;
   max-width: 400px;
+  width: 400px;
   height: auto;
   width: 100%;
   z-index: 1;
@@ -65,7 +67,8 @@ export const Form = styled.form`
   border-radius: 4px;
   box-shadow: 0 1px 3px rbga(0, 0, 0, 0.9);
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 900px) {
+    max-width: 300px;
     padding: 32px 32px;
   }
 `;
@@ -92,13 +95,18 @@ export const FormInput = styled.input`
 `;
 
 export const FormButton = styled.button`
-  background: #01bf71;
+  background: #04c4d9;
   padding: 16px 0;
   border: none;
   border-radius: 4px;
-  color: #fff;
+  color: #000;
   font-size: 20px;
   cursor: pointer;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: #f57c00;
+  }
 `;
 
 export const Text = styled.span`
@@ -106,4 +114,10 @@ export const Text = styled.span`
   margin-top: 24px;
   color: #fff;
   font-size: 14px;
+  cursor: pointer;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    color: #f57c00;
+  }
 `;
