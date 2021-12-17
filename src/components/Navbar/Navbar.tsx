@@ -16,7 +16,6 @@ import {
 } from "./NavbarElements";
 import { Button } from "../ButtonElement/ButtonElements";
 import { Buttonn, NavBtn2 } from "../Buttonclass/ButtonclassElements";
-import { FooterA } from "../Footer/FooterElements";
 
 const Navbar = ({ toggle }: { toggle: any }) => {
   const toggleHome = () => {

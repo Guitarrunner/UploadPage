@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link as LinkScroll } from "react-scroll";
 import { Link as LinkR } from "react-router-dom";
 
 export const NavbarBigContainer = styled.nav`
@@ -113,7 +112,7 @@ export const NavLinks = styled(LinkR)`
   border-radius: 50px;
   cursor: pointer;
   &:active {
-    border-bottom: 3px solid #01bf71;
+    border-bottom: 3px solid #101522;
   }
 
   &:hover {
@@ -142,7 +141,7 @@ export const NavBtnLink = styled(LinkR)`
   transition: all 0.2s ease-in-out;
   txt-decoration: none;
 
-  &.hover {
+  &:hover {
     transition: all 0.2s ease-in-out;
     backgroud: #fff;
     color: #f57c00;

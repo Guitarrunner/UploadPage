@@ -8,6 +8,7 @@ import Courses from "./views/Courses";
 import Home from "./views/Home";
 import SignIn from "./views/SignIn";
 import Units from "./views/Units";
+import { CoursesData } from "./views/Courses/CoursesData";
 
 // When the user scrolls down 50px from the top of the document, resize the header's font size
 window.onscroll = function () {
@@ -30,7 +31,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/signin" element={<SignIn />} />
-          <Route path="/cursos" element={<Courses />} />
+          <Route path="/cursos" element={<Courses data={CoursesData} />} />
           <Route path="/unidades" element={<Units />} />
           <Route path="/contato" element={<Contact />} />
           <Route path="/sobre" element={<About />} />
@@ -41,7 +42,11 @@ function App() {
           <div className="icon facebook">
             <div className="tooltip">Facebook</div>
             <span>
-              <a target="_blank" href="https://m.facebook.com/uploadescola/">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://m.facebook.com/uploadescola/"
+              >
                 <i className="fab fa-facebook-f"></i>
               </a>
             </span>
@@ -49,7 +54,7 @@ function App() {
           <div className="icon whatsapp">
             <div className="tooltip">WhatsApp</div>
             <span>
-              <a target="_blank" href="https://wa.link/tinzf7">
+              <a target="_blank" rel="noreferrer" href="https://wa.link/tinzf7">
                 <i className="fab fa-whatsapp"></i>
               </a>
             </span>
@@ -60,6 +65,7 @@ function App() {
             <span>
               <a
                 target="_blank"
+                rel="noreferrer"
                 href="https://instagram.com/uploadescola?utm_medium=copy_link"
               >
                 <i className="fab fa-instagram"></i>
@@ -69,7 +75,7 @@ function App() {
           <div className="icon blog">
             <div className="tooltip">Blog</div>
             <span>
-              <a target="_blank" href="https://google.com">
+              <a target="_blank" rel="noreferrer" href="https://google.com">
                 <i className="fab fa-blogger"></i>
               </a>
             </span>
@@ -79,6 +85,7 @@ function App() {
             <span>
               <a
                 target="_blank"
+                rel="noreferrer"
                 href="https://youtube.com/channel/UCQqHGVL4RGTg2E5UkdQ9xXQ"
               >
                 <i className="fab fa-youtube"></i>

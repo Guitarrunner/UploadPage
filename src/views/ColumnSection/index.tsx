@@ -6,7 +6,7 @@ import {
   ColumnContainer,
   ColumnWrapper,
   ColumnH1,
-  ColumCard,
+  ColumnCard,
   ColumnIcon,
   ColumnH2,
   ColumnP,
@@ -29,27 +29,27 @@ const ColumnSection = () => {
         </ColumnP2>
 
         <ColumnWrapper>
-          <ColumCard>
+          <ColumnCard>
             <ColumnIcon src={icon1} />
             <ColumnH2>Missão </ColumnH2>
             <ColumnP>
               Desenvolver e preparar nossos alunos para o futuro
             </ColumnP>
-          </ColumCard>
-          <ColumCard>
+          </ColumnCard>
+          <ColumnCard>
             <ColumnIcon src={icon2} />
             <ColumnH2>Vissão </ColumnH2>
             <ColumnP>
               Revolucionar a educação no Brasil através da ciência da computação
             </ColumnP>
-          </ColumCard>
-          <ColumCard>
+          </ColumnCard>
+          <ColumnCard>
             <ColumnIcon src={icon3} />
             <ColumnH2>Valores </ColumnH2>
             <ColumnP>
               Somos inovadores, colaborativos, responsáveis e motivados
             </ColumnP>
-          </ColumCard>
+          </ColumnCard>
         </ColumnWrapper>
       </ColumnContainer>
     </>

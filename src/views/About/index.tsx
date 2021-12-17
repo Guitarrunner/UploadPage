@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
 import Sidebar from "../../components/Sidebar";
+import { AboutSection, AboutWrapper } from "./AboutElements";
 
 function About() {
   const [isOpen, setisOpen] = useState(false);
@@ -12,6 +12,9 @@ function About() {
     <>
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
+      <AboutSection>
+        <AboutWrapper></AboutWrapper>
+      </AboutSection>
     </>
   );
 }

@@ -1,30 +1,38 @@
 import styled from "styled-components";
 
-export const ColumnContainer = styled.div`
-  height: 500px;
-  display: flex;
-  flex-direction: column;
+export const CoursesSection = styled.section`
+  background: #04c4d9;
+  margin-top: 150px;
+  height: 510px;
   overflow-x: hidden;
 
-  overflow-y: hidden;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-
-  background: #04c4d9;
-
-  @media screen and (max-width: 1200px) {
-    transition: all 0.2s ease-in-out;
-    height: 1100px;
+  @media screen and (max-width: 760px) {
+    padding: 50px 0;
   }
 
-  @media screen and (max-width: 700px) {
-    transition: all 0.2s ease-in-out;
-    height: 1300px;
+  &::-webkit-scrollbar {
+    display: none;
   }
 `;
 
-export const ColumnWrapper = styled.div`
+export const CoursesWrapper = styled.div`
+  display: grid;
+  z-index: 1;
+  height: 510px;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 0 24px;
+  justify-content: center;
+
+  @media screen and (max-width: 1000px) {
+    transition: all 0.2s ease-in-out;
+    height: 100vh;
+  }
+`;
+
+export const Courses2Wrapper = styled.div`
   max-width: 1000px;
   margin: 0 auto;
   display: grid;
@@ -43,14 +51,15 @@ export const ColumnWrapper = styled.div`
   }
 `;
 
-export const ColumnCard = styled.div`
+export const CoursesCard = styled.div`
   background: #f9f9f9;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   border-radius: 10px;
-  max-height: 340px;
+  height: 400px;
+  max-height: 400px;
   padding: 30px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease-in-out;
@@ -62,17 +71,18 @@ export const ColumnCard = styled.div`
   }
 `;
 
-export const ColumnIcon = styled.img`
+export const CoursesIcon = styled.img`
   height: 160px;
   width: 160px;
   margin-bottom: 10px;
 `;
 
-export const ColumnH1 = styled.h1`
+export const CoursesH1 = styled.h1`
   font-size: 2.5rem;
   color: #fff;
   margin-top: 16px;
   margin-bottom: 32px;
+  text-align: center;
 
   @media screen and (max-width: 480px) {
     font-size: 2rem;
@@ -80,14 +90,14 @@ export const ColumnH1 = styled.h1`
   }
 `;
 
-export const ColumnH2 = styled.h2`
+export const CoursesH2 = styled.h2`
   font-size: 1rem;
   text-align: center;
   margin-bottom: 10px;
   color: #101522;
 `;
 
-export const ColumnP = styled.p`
+export const CoursesP = styled.p`
   font-size: 1rem;
   text-align: center;
   color: #101522;
@@ -95,16 +105,12 @@ export const ColumnP = styled.p`
   }
 `;
 
-export const ColumnP2 = styled.p`
-color: #101522;
-width: 70vw;
+export const CoursesP2 = styled.p`
+  color: #101522;
+  width: 70vw;
   font-size: 1rem;
+  font-weight: 600;
   text-align: center;
   margin-bottom: 32px;
-  @media screen and (max-width: 760px) {
-    margin-left: -10%;
-    text-align: left;
-    max-width: 230px;
-  }
-  }
+  margin-left: 7%;
 `;
