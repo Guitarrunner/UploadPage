@@ -8,7 +8,6 @@ import {
   SidebarMenu,
   SidebarLink,
   SideBtnWrap,
-  SidebarRoute,
 } from "./SidebarElements";
 
 const Sidebar = ({ isOpen, toggle }: { isOpen: any; toggle: any }) => {
@@ -20,24 +19,24 @@ const Sidebar = ({ isOpen, toggle }: { isOpen: any; toggle: any }) => {
       <SidebarWrapper>
         <SidebarMenu>
           <SidebarLink to="courses" onClick={toggle}>
-            Courses
+            Cursos
           </SidebarLink>
           <SidebarLink to="units" onClick={toggle}>
-            Units
+            Unidades
           </SidebarLink>
           <SidebarLink to="contact" onClick={toggle}>
-            Contact
+            Contato
           </SidebarLink>
           <SidebarLink to="about" onClick={toggle}>
-            About
+            Sobre nos
           </SidebarLink>
           <SidebarLink to="signup" onClick={toggle}>
-            Sign Up
+            Iniciar sessão
           </SidebarLink>
 
           <SideBtnWrap>
             <Button to="/singin" onClick={toggle}>
-              Sign In
+              Cadastre-se
             </Button>
           </SideBtnWrap>
         </SidebarMenu>

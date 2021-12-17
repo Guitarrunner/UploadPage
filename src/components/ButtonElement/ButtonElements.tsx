@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link } from "react-scroll";
+import { Link as LinkR } from "react-router-dom";
 
 interface Props {
   o?: {
@@ -11,9 +11,9 @@ interface Props {
   };
 }
 
-export const Button = styled(Link)<Props>`
+export const Button = styled(LinkR)<Props>`
   border-radius: 50px;
-  background: ${(Props) => (Props.o?.primary ? "#01bf71" : "green")};
+  background: ${(Props) => (Props.o?.primary ? "#01bf71" : "#101522")};
   white-space: nowrap;
   padding: ${(Props) => (Props.o?.big ? `14px 48px` : `12px 30px`)};
   color: ${(Props) => (Props.o?.dark ? "#010606" : "#fff")};
@@ -22,12 +22,14 @@ export const Button = styled(Link)<Props>`
   border: none;
   cursor: pointer;
   display: flex;
+  
+  text-decoration: none;
   justify-content: center;
   align-items: center:
   transition: all 0.2s ease-in-out;
 
   &:hover{
       transition: all 0.2s ease-in-out;
-      background:${(Props) => (Props.o?.primary ? "#fff" : "blue")};
+      background:${(Props) => (Props.o?.primary ? "#fff" : "#F57C00")};
   }
 `;

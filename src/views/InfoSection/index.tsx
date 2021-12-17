@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "../../components/ButtonElement/ButtonElements";
+
 import {
   InfoContainer,
   InfoWrapper,
@@ -9,7 +9,6 @@ import {
   TopLine,
   Heading,
   Subtitle,
-  BtnWrap,
   Column2,
   ImgWrap,
   Img,
@@ -23,12 +22,8 @@ const InfoSection = ({
   headline,
   darkText,
   description,
-  buttonLabel,
   img,
   alt,
-  primary,
-  dark,
-  dark2,
 }: {
   lightBg: any;
   id: any;
@@ -52,25 +47,9 @@ const InfoSection = ({
           <InfoRow o={(imgStart = { imgStart })}>
             <Column1>
               <TextWrapper>
-                <TopLine>{topLine}</TopLine>
+                <TopLine o={(lightText = { lightText })}>{topLine}</TopLine>
                 <Heading o={(lightText = { lightText })}>{headline}</Heading>
                 <Subtitle o={(darkText = { darkText })}>{description}</Subtitle>
-                <BtnWrap>
-                  <Button
-                    to="home"
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    offset={-80}
-                    o={
-                      ((primary = { primary }),
-                      (dark = { dark }),
-                      (dark2 = { dark2 }))
-                    }
-                  >
-                    {buttonLabel}
-                  </Button>
-                </BtnWrap>
               </TextWrapper>
             </Column1>
             <Column2>
