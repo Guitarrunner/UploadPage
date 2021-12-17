@@ -2,8 +2,12 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.scss";
 import Footer from "./components/Footer";
+import About from "./views/About";
+import Contact from "./views/Contact";
+import Courses from "./views/Courses";
 import Home from "./views/Home";
 import SignIn from "./views/SignIn";
+import Units from "./views/Units";
 
 // When the user scrolls down 50px from the top of the document, resize the header's font size
 window.onscroll = function () {
@@ -26,6 +30,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/signin" element={<SignIn />} />
+          <Route path="/cursos" element={<Courses />} />
+          <Route path="/unidades" element={<Units />} />
+          <Route path="/contato" element={<Contact />} />
+          <Route path="/sobre" element={<About />} />
         </Routes>
       </Router>
       <div>
@@ -33,31 +41,48 @@ function App() {
           <div className="icon facebook">
             <div className="tooltip">Facebook</div>
             <span>
-              <i className="fab fa-facebook-f"></i>
+              <a target="_blank" href="https://m.facebook.com/uploadescola/">
+                <i className="fab fa-facebook-f"></i>
+              </a>
             </span>
           </div>
           <div className="icon whatsapp">
             <div className="tooltip">WhatsApp</div>
             <span>
-              <i className="fab fa-whatsapp"></i>
+              <a target="_blank" href="https://wa.link/tinzf7">
+                <i className="fab fa-whatsapp"></i>
+              </a>
             </span>
           </div>
+
           <div className="icon instagram">
             <div className="tooltip">Instagram</div>
             <span>
-              <i className="fab fa-instagram"></i>
+              <a
+                target="_blank"
+                href="https://instagram.com/uploadescola?utm_medium=copy_link"
+              >
+                <i className="fab fa-instagram"></i>
+              </a>
             </span>
           </div>
           <div className="icon blog">
             <div className="tooltip">Blog</div>
             <span>
-              <i className="fab fa-blogger"></i>
+              <a target="_blank" href="https://google.com">
+                <i className="fab fa-blogger"></i>
+              </a>
             </span>
           </div>
           <div className="icon youtube">
             <div className="tooltip">Youtube</div>
             <span>
-              <i className="fab fa-youtube"></i>
+              <a
+                target="_blank"
+                href="https://youtube.com/channel/UCQqHGVL4RGTg2E5UkdQ9xXQ"
+              >
+                <i className="fab fa-youtube"></i>
+              </a>
             </span>
           </div>
         </div>

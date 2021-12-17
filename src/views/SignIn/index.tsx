@@ -19,7 +19,9 @@ const SignIn = () => {
       <ScrollToTop />
       <Container>
         <FormWrap>
-          <Logo src={logo} />
+          <a href="http://localhost:3000/">
+            <Logo src={logo} />
+          </a>
           <FormContent>
             <Form action="#">
               <FormH1>Faça login em sua conta</FormH1>

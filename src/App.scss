@@ -114,13 +114,21 @@
 .wrapper .blog:hover,
 .wrapper .blog:hover .tooltip,
 .wrapper .blog:hover .tooltip::before {
-  background-color: #333333;
+  background-color: #f57c00;
   color: #ffffff;
 }
-
+.wrapper .youtuber:hover + i,
+.wrapper .youtube:hover .tooltip + i,
+.wrapper .youtube:hover .tooltip::before + i {
+  color: white;
+}
 .wrapper .youtube:hover,
 .wrapper .youtube:hover .tooltip,
 .wrapper .youtube:hover .tooltip::before {
   background-color: #de463b;
   color: #ffffff;
+}
+
+i {
+  color: #101522;
 }

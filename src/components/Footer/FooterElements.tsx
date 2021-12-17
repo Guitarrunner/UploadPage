@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { Link } from "react-scroll";
-
 export const FooterContainer = styled.footer`
   background-color: #101522;
   width: 100%;
@@ -121,4 +120,8 @@ export const SocialIcons = styled.div`
 export const SocialIconLink = styled.a`
   color: #fff;
   font-size: 24px;
+`;
+
+export const FooterA = styled.a`
+  text-decoration: none;
 `;

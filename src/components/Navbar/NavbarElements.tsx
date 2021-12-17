@@ -103,23 +103,27 @@ export const NavItem = styled.li`
   height: 40px;
 `;
 
-export const NavLinks = styled(LinkScroll)`
+export const NavLinks = styled(LinkR)`
   color: #fff;
   display: flex;
   align-items: center;
   text-decoration: none;
   padding: 0 1rem;
   height: 100%;
+  border-radius: 50px;
   cursor: pointer;
-  &.active {
+  &:active {
     border-bottom: 3px solid #01bf71;
+  }
+
+  &:hover {
+    background: #f57c00;
   }
 `;
 
 export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
-
   @media screen and (max-width: 768px) {
     display: none;
   }

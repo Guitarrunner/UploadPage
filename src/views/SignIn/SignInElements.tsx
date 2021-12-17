@@ -99,6 +99,7 @@ export const FormButton = styled.button`
   padding: 16px 0;
   border: none;
   border-radius: 4px;
+  width: 400px;
   color: #000;
   font-size: 20px;
   cursor: pointer;

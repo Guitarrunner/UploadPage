@@ -16,6 +16,7 @@ import {
   SocialIcons,
   SocialIconLink,
   FooterP,
+  FooterA,
 } from "./FooterElements";
 const Footer = () => {
   const toggleHome = () => {
@@ -41,9 +42,15 @@ const Footer = () => {
               </FooterLinkItems>
               <FooterLinkItems>
                 <FooterLinkTitle>Contate-nos</FooterLinkTitle>
-                <FooterP>Tel: (71) 3506-3604</FooterP>
-                <FooterP>WhatsApp: (71) 99377-6497</FooterP>
-                <FooterP>Email: escolaupload@gmail.com</FooterP>
+                <FooterA target="_blank" href="tel:+557135063604">
+                  <FooterP>Tel: (71) 3506-3604</FooterP>
+                </FooterA>
+                <FooterA target="_blank" href="https://wa.link/tinzf7">
+                  <FooterP>WhatsApp: (71) 99377-6497</FooterP>
+                </FooterA>
+                <FooterA target="_blank" href="mailto:escolaupload@gmail.com">
+                  <FooterP>Email: escolaupload@gmail.com</FooterP>
+                </FooterA>
               </FooterLinkItems>
               <FooterLinkItems>
                 <FooterLinkTitle>Unidades</FooterLinkTitle>
@@ -66,20 +73,32 @@ const Footer = () => {
               </SocialLogo>
 
               <SocialIcons>
-                <SocialIconLink href="/" target="_blank" aria-label="Facebook">
+                <SocialIconLink
+                  href="https://m.facebook.com/uploadescola/"
+                  target="_blank"
+                  aria-label="Facebook"
+                >
                   <FaFacebook />
                 </SocialIconLink>
                 <SocialIconLink
-                  href="/"
+                  href="https://instagram.com/uploadescola?utm_medium=copy_link"
                   target="_blank"
-                  aria-label="Instasgram"
+                  aria-label="Instagram"
                 >
                   <FaInstagram />
                 </SocialIconLink>
-                <SocialIconLink href="/" target="_blank" aria-label="Youtube">
+                <SocialIconLink
+                  href="https://youtube.com/channel/UCQqHGVL4RGTg2E5UkdQ9xXQ"
+                  target="_blank"
+                  aria-label="Youtube"
+                >
                   <FaYoutube />
                 </SocialIconLink>
-                <SocialIconLink href="/" target="_blank" aria-label="WhatsApp">
+                <SocialIconLink
+                  href="https://wa.link/tinzf7"
+                  target="_blank"
+                  aria-label="WhatsApp"
+                >
                   <FaWhatsapp />
                 </SocialIconLink>
               </SocialIcons>
