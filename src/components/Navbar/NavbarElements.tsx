@@ -1,6 +1,12 @@
 import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 
+interface Props {
+  o?: {
+    on?: boolean;
+  };
+}
+
 export const NavbarBigContainer = styled.nav`
   height: 160px;
   width: 100%;
@@ -102,13 +108,14 @@ export const NavItem = styled.li`
   height: 40px;
 `;
 
-export const NavLinks = styled(LinkR)`
+export const NavLinks = styled(LinkR)<Props>`
   color: #fff;
   display: flex;
   align-items: center;
   text-decoration: none;
   padding: 0 1rem;
   height: 100%;
+  background: ${(Props) => (Props.o?.on ? "#f57c00" : "none")};
   border-radius: 50px;
   cursor: pointer;
   &:active {

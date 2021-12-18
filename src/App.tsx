@@ -9,6 +9,7 @@ import Home from "./views/Home";
 import SignIn from "./views/SignIn";
 import Units from "./views/Units";
 import { CoursesData } from "./views/Courses/CoursesData";
+import { UnitsData } from "./views/Units/UnitsData";
 
 // When the user scrolls down 50px from the top of the document, resize the header's font size
 window.onscroll = function () {
@@ -32,7 +33,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/signin" element={<SignIn />} />
           <Route path="/cursos" element={<Courses data={CoursesData} />} />
-          <Route path="/unidades" element={<Units />} />
+          <Route path="/unidades" element={<Units data={UnitsData} />} />
           <Route path="/contato" element={<Contact />} />
           <Route path="/sobre" element={<About />} />
         </Routes>

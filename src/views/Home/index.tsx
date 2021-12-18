@@ -16,7 +16,7 @@ const Home: FunctionComponent = () => {
   };
   return (
     <>
-      <Navbar toggle={toggle} />
+      <Navbar toggle={toggle} on="home" />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Carrousel slides={CarrouselData} />
       <InfoSection {...homObjOne} />

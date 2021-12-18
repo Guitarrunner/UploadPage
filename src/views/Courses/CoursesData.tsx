@@ -20,7 +20,7 @@ export const CoursesData = [
     icon: icon2,
     h: "Criação de sites",
     p: "Desenvolvimento de projetos de websites com designs responsivos e interativos com utilização de diferentes linguagens e plataformas de criação.",
-    p2: "Criatividade, senso crítico, percepção visual. e resolução de problemas.",
+    p2: "Criatividade, senso crítico, percepção visual e resolução de problemas.",
     link: "/cursos/criaçãodesites",
   },
   {

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FooterA } from "../../components/Footer/FooterElements";
 import Navbar from "../../components/Navbar/Navbar";
 import Sidebar from "../../components/Sidebar";
+import ScrollToTop from "../ScrollToTop";
 
 import {
   Button,
@@ -26,7 +27,8 @@ const Courses = ({ data }: { data: any }) => {
   };
   return (
     <>
-      <Navbar toggle={toggle} />
+      <ScrollToTop />
+      <Navbar toggle={toggle} on="courses" />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <CoursesSection>
         <CoursesWrapper>

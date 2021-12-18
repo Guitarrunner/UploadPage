@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Sidebar from "../../components/Sidebar";
+import ScrollToTop from "../ScrollToTop";
 import { AboutSection, AboutWrapper } from "./AboutElements";
 
 function About() {
@@ -10,7 +11,8 @@ function About() {
   };
   return (
     <>
-      <Navbar toggle={toggle} />
+      <ScrollToTop />
+      <Navbar toggle={toggle} on="about" />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <AboutSection>
         <AboutWrapper></AboutWrapper>

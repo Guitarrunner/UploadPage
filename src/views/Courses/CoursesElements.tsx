@@ -4,9 +4,16 @@ import { Link as LinkR } from "react-router-dom";
 export const CoursesSection = styled.section`
   background: #04c4d9;
   margin-top: 150px;
-  height: 510px;
+  height: 1450px;
   overflow-x: hidden;
-
+  @media screen and (max-width: 1200px) {
+    transition: all 0.2s ease-in-out;
+    height: 2200px;
+  }
+  @media screen and (max-width: 760px) {
+    transition: all 0.2s ease-in-out;
+    height: 3800px;
+  }
   @media screen and (max-width: 760px) {
     padding: 50px 0;
   }
@@ -19,21 +26,13 @@ export const CoursesSection = styled.section`
 export const CoursesWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 1450px;
+  height: 550px;
   margin-right: auto;
   margin-left: auto;
   justify-content: center;
   align-items: center;
   padding: 0 24px;
   justify-content: center;
-  @media screen and (max-width: 1200px) {
-    transition: all 0.2s ease-in-out;
-    height: 2500px;
-  }
-  @media screen and (max-width: 700px) {
-    transition: all 0.2s ease-in-out;
-    height: 3800px;
-  }
 `;
 export const SimpleWrapper = styled.div`
   background: #f57c00;
@@ -46,7 +45,7 @@ export const SimpleWrapper = styled.div`
   position: absolute;
   top: 82%;
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 760px) {
     top: 85%;
     height: 12%;
     width: 95%;
@@ -65,7 +64,7 @@ export const Courses2Wrapper = styled.div`
     grid-template-columns: 1fr 1fr;
   }
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 760px) {
     grid-template-columns: 1fr;
     padding: 0 20px;
   }
@@ -92,7 +91,8 @@ export const CoursesCard = styled.div`
     cursor: pointer;
   }
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 760px) {
+    width: 85%;
     margin-left: -7%;
     margin-right: 7%;
   }
@@ -161,7 +161,7 @@ export const CoursesP4 = styled.p`
   max-width: 50%;
   color: #101522;
   margin-right:2%;
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width:  760px) {
     max-width: 60%;
   }
   
