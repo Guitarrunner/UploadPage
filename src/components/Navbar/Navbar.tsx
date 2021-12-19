@@ -53,6 +53,21 @@ const Navbar = ({ toggle, on }: { toggle: any; on: any }) => {
                   Sobre nós
                 </NavLinks>
               </NavItem>
+              <NavItem>
+                <NavLinks to="/parcerias" o={on}>
+                  Parcerias
+                </NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks to="/franqueado" o={on}>
+                  Seja Franqueado
+                </NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks to="/blog" o={on}>
+                  Blog
+                </NavLinks>
+              </NavItem>
               <NavBtn>
                 <Button to="/signin">Cadastre-se</Button>
               </NavBtn>

@@ -1,15 +1,13 @@
 import React, { useState } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Sidebar from "../../components/Sidebar";
+import ScrollToTop from "../ScrollToTop";
 import {
   Column1,
   Column2,
   Heading,
-  Img,
-  ImgWrap,
   InfoContainer,
   InfoRow,
-  InfoWrapper,
   Map,
   Subtitle,
   TextWrapper,
@@ -25,6 +23,7 @@ const Units = ({ data }: { data: any }) => {
   };
   return (
     <>
+      <ScrollToTop></ScrollToTop>
       <Navbar toggle={toggle} on="units" />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <UnitSection>
