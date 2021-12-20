@@ -1,9 +1,11 @@
 import React, { useState } from "react";
-import { Button } from "../../components/ButtonElement/ButtonElements";
+import { FooterA } from "../../components/Footer/FooterElements";
 import Navbar from "../../components/Navbar/Navbar";
 import Sidebar from "../../components/Sidebar";
+import ScrollToTop from "../ScrollToTop";
 
 import {
+  Button,
   CoursesCard,
   CoursesH1,
   CoursesH2,
@@ -13,6 +15,9 @@ import {
   CoursesWrapper,
   CoursesSection,
   Courses2Wrapper,
+  CoursesP3,
+  SimpleWrapper,
+  CoursesP4,
 } from "./CoursesElements";
 
 const Courses = ({ data }: { data: any }) => {
@@ -20,9 +25,11 @@ const Courses = ({ data }: { data: any }) => {
   const toggle = () => {
     setisOpen(!isOpen);
   };
+  console.log(window.location.href);
   return (
     <>
-      <Navbar toggle={toggle} />
+      <ScrollToTop />
+      <Navbar toggle={toggle} on="courses" />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <CoursesSection>
         <CoursesWrapper>
@@ -34,14 +41,17 @@ const Courses = ({ data }: { data: any }) => {
           <Courses2Wrapper>
             {data.map((data: any, index: any) => {
               return (
-                <CoursesCard key={index}>
-                  <CoursesIcon src={data.icon} />
-                  <CoursesH2>{data.h} </CoursesH2>
-                  <CoursesP>{data.p}</CoursesP>
-                  <CoursesP>Habilidades desenvolvidas:</CoursesP>
-                  <CoursesP>{data.p2}</CoursesP>
-                  <Button to={data.link}>Mais informação</Button>
-                </CoursesCard>
+                <FooterA href={data.link}>
+                  <CoursesCard key={index}>
+                    <CoursesIcon src={data.icon} />
+                    <CoursesH2>{data.h} </CoursesH2>
+                    <CoursesP>{data.p}</CoursesP>
+                    <SimpleWrapper>
+                      <CoursesP3>Habilidades desenvolvidas:</CoursesP3>
+                      <CoursesP4>{data.p2}</CoursesP4>
+                    </SimpleWrapper>
+                  </CoursesCard>
+                </FooterA>
               );
             })}
           </Courses2Wrapper>

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { FaTimes } from "react-icons/fa";
 import { Link as LinkR } from "react-router-dom";
-import { Link as LinkScroll } from "react-scroll";
 
 interface Props {
   o?: {
@@ -36,7 +35,7 @@ export const Icon = styled.div`
   background: transparent;
   font-size: 2rem;
   cursor: pointer;
-  
+
   outline: none;
 `;
 
@@ -51,32 +50,32 @@ export const SidebarMenu = styled.ul`
   text-align: center;
   justify-content: center;
 
-  @media screen and (max-widht. 480px) {
+  @media screen and (max-widht: 480px) {
     grid-template-rows: reapeat(6, 60px);
   }
 `;
 
-export const SidebarLink = styled(LinkScroll)`
-padding: 16px 64px;
-display: flex;
-align-items. center,
-justify-content: center;
-font-size: 1.5rem;
-text-devoration: none;
-list-style: none;
-transition: 0.2s ease-in-out;
-text-decoration: none,
-color#fff;
-cursor:pointer;
+export const SidebarLink = styled(LinkR)`
+  padding: 16px 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  list-style: none;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
 
-&.hover {
-    color: #01bf71;
+  &:hover {
+    color: #f57c00;
     transition: 0.2s ease-in-out;
-}`;
+  }
+`;
 
 export const SideBtnWrap = styled.div`
-display: flex,
-justify-content: center;`;
+  justify-content: center;
+`;
 
 export const SidebarRoute = styled(LinkR)`
   border-radius: 50px;
@@ -91,7 +90,7 @@ export const SidebarRoute = styled(LinkR)`
   transition: all 0.2s ease-in-out;
   text-decoration: none;
 
-  &.hover {
+  &:hover {
     transition: all 0.2s ease-in-out;
     background: #fff;
     color: #10606;

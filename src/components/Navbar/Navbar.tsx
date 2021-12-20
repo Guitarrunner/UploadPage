@@ -17,7 +17,7 @@ import {
 import { Button } from "../ButtonElement/ButtonElements";
 import { Buttonn, NavBtn2 } from "../Buttonclass/ButtonclassElements";
 
-const Navbar = ({ toggle }: { toggle: any }) => {
+const Navbar = ({ toggle, on }: { toggle: any; on: any }) => {
   const toggleHome = () => {
     scroll.scrollToTop();
   };
@@ -25,7 +25,7 @@ const Navbar = ({ toggle }: { toggle: any }) => {
     <>
       <NavbarBigContainer>
         <a href="http://localhost:3000/">
-          <Logo src={logo} onClick={toggleHome} />
+          <Logo src={logo} />
         </a>
         <Nav>
           <NavbarContainer>
@@ -34,16 +34,39 @@ const Navbar = ({ toggle }: { toggle: any }) => {
             </MobileLogo>
             <NavMenu>
               <NavItem>
-                <NavLinks to="/cursos">Cursos</NavLinks>
+                <NavLinks to="/cursos" o={on}>
+                  Cursos
+                </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/unidades">Unidades</NavLinks>
+                <NavLinks to="/unidades" o={on}>
+                  Unidades
+                </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/contato">Contato</NavLinks>
+                <NavLinks to="/contato" o={on}>
+                  Contato
+                </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/sobre">Sobre nós</NavLinks>
+                <NavLinks to="/sobre" o={on}>
+                  Sobre nós
+                </NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks to="/parcerias" o={on}>
+                  Parcerias
+                </NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks to="/franqueado" o={on}>
+                  Seja Franqueado
+                </NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks to="/blog" o={on}>
+                  Blog
+                </NavLinks>
               </NavItem>
               <NavBtn>
                 <Button to="/signin">Cadastre-se</Button>

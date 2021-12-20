@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Sidebar from "../../components/Sidebar";
 import ScrollToTop from "../ScrollToTop";
-import { AboutSection, AboutWrapper } from "./AboutElements";
+import { BlogSection, BlogWrapper } from "./BlogElements";
 
-function About() {
+function Blog() {
   const [isOpen, setisOpen] = useState(false);
   const toggle = () => {
     setisOpen(!isOpen);
@@ -12,13 +12,13 @@ function About() {
   return (
     <>
       <ScrollToTop />
-      <Navbar toggle={toggle} on="about" />
+      <Navbar toggle={toggle} on="blog" />
       <Sidebar isOpen={isOpen} toggle={toggle} />
-      <AboutSection>
-        <AboutWrapper></AboutWrapper>
-      </AboutSection>
+      <BlogSection>
+        <BlogWrapper></BlogWrapper>
+      </BlogSection>
     </>
   );
 }
 
-export default About;
+export default Blog;

@@ -1,6 +1,12 @@
 import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 
+interface Props {
+  o?: {
+    on?: boolean;
+  };
+}
+
 export const NavbarBigContainer = styled.nav`
   height: 160px;
   width: 100%;
@@ -74,7 +80,7 @@ export const Logo = styled.img`
 
 export const MobileLogo = styled.div`
   display: none;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 990px) {
     display: block;
     position: absolute;
     top: 0;
@@ -93,7 +99,7 @@ export const NavMenu = styled.ul`
   text-align: center;
   margin-right: -22px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 990px) {
     display: none;
   }
 `;
@@ -102,13 +108,14 @@ export const NavItem = styled.li`
   height: 40px;
 `;
 
-export const NavLinks = styled(LinkR)`
+export const NavLinks = styled(LinkR)<Props>`
   color: #fff;
   display: flex;
   align-items: center;
   text-decoration: none;
   padding: 0 1rem;
   height: 100%;
+  background: ${(Props) => (Props.o?.on ? "#f57c00" : "none")};
   border-radius: 50px;
   cursor: pointer;
   &:active {
