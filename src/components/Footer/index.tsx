@@ -18,10 +18,12 @@ import {
   FooterP,
   FooterA,
 } from "./FooterElements";
+
 const Footer = () => {
   const toggleHome = () => {
     scroll.scrollToTop();
   };
+
   return (
     <>
       <FooterContainer>
@@ -30,15 +32,23 @@ const Footer = () => {
             <FooterLinksWrapper>
               <FooterLinkItems>
                 <FooterLinkTitle>Cursos</FooterLinkTitle>
-                <FooterLink to="/">Robótica</FooterLink>
-                <FooterLink to="/">Youtuber</FooterLink>
-                <FooterLink to="/">MineMods</FooterLink>
-                <FooterLink to="/">Games 2D</FooterLink>
-                <FooterLink to="/">Games 3D</FooterLink>
-                <FooterLink to="/">Artes digitais</FooterLink>
-                <FooterLink to="/">Edição de vídeo</FooterLink>
-                <FooterLink to="/">Criação de sites</FooterLink>
-                <FooterLink to="/">Desenvolvimento de aplicativos</FooterLink>
+                <FooterLink to="/cursos/robotica">Robótica</FooterLink>
+                <FooterLink to="/cursos/youtuber">Youtuber</FooterLink>
+                <FooterLink to="/cursos/minemods">MineMods</FooterLink>
+                <FooterLink to="/cursos/games2d">Games 2D</FooterLink>
+                <FooterLink to="/cursos/games3d">Games 3D</FooterLink>
+                <FooterLink to="/cursos/artesdigitais">
+                  Artes digitais
+                </FooterLink>
+                <FooterLink to="/cursos/ediçãodevideo">
+                  Edição de vídeo
+                </FooterLink>
+                <FooterLink to="/cursos/criaçãodesites">
+                  Criação de sites
+                </FooterLink>
+                <FooterLink to="/cursos/aplicativos">
+                  Desenvolvimento de aplicativos
+                </FooterLink>
               </FooterLinkItems>
               <FooterLinkItems>
                 <FooterLinkTitle>Contate-nos</FooterLinkTitle>
@@ -54,11 +64,13 @@ const Footer = () => {
               </FooterLinkItems>
               <FooterLinkItems>
                 <FooterLinkTitle>Unidades</FooterLinkTitle>
-                <FooterLink to="/">Salvador - Imbuí</FooterLink>
-                <FooterLink to="/">Salvador - Pituba</FooterLink>
-                <FooterLink to="/">Jequié</FooterLink>
-                <FooterLink to="/">Ilhéus</FooterLink>
-                <FooterLink to="/">Pindamonhangaba</FooterLink>
+                <FooterLink to="/unidades#Imbui">Salvador - Imbuí</FooterLink>
+                <FooterLink to="/unidades#Pituba">Salvador - Pituba</FooterLink>
+                <FooterLink to="/unidades#Jequie">Jequié</FooterLink>
+                <FooterLink to="/unidades#Ilheus">Ilhéus</FooterLink>
+                <FooterLink to="/unidades#Pindamonhangaba">
+                  Pindamonhangaba
+                </FooterLink>
               </FooterLinkItems>
             </FooterLinksWrapper>
           </FooterLinksContainer>

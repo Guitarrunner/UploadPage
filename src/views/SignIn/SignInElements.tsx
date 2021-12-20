@@ -1,14 +1,10 @@
 import styled from "styled-components";
 export const Container = styled.div`
-min-height: 692px;
-position. fixed;
-bottom: 0;
-left: 0;
-right: 0;
-top:0;
-z-index:0;
-overflow: hidden;
-background: #04c4d9;
+  height: 700px;
+  overflow: hidden;
+  z-index: 0;
+  overflow: hidden;
+  background: #04c4d9;
 `;
 
 export const FormWrap = styled.div`
@@ -17,10 +13,6 @@ export const FormWrap = styled.div`
   margin-top: 5%;
   flex-direction: column;
   justify-content: center;
-  @media screen and (max-width: 900px) {
-    margin-top: 30%;
-    margin-left: -15%;
-  }
 `;
 
 export const Logo = styled.img`
@@ -45,7 +37,7 @@ export const FormContent = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
-  justijy-content: center;
+  justify-content: center;
 
   @media screen and (max-width: 480px) {
     padding: 10px;
@@ -54,20 +46,28 @@ export const FormContent = styled.div`
 
 export const Form = styled.form`
   background: #101522;
-  max-width: 400px;
   width: 400px;
-  height: auto;
-  width: 100%;
+  height: 350px;
+  max-height: 350px;
   z-index: 1;
   display: grid;
   margin: 0 auto;
   padding: 80px 32px;
   border-radius: 4px;
   box-shadow: 0 1px 3px rbga(0, 0, 0, 0.9);
-
   @media screen and (max-width: 900px) {
-    max-width: 300px;
-    padding: 32px 32px;
+    transition: all 0.2s ease-in-out;
+    margin-top: 15%;
+  }
+  @media screen and (max-width: 749px) {
+    transition: all 0.2s ease-in-out;
+    margin-top: 20%;
+  }
+  @media screen and (max-width: 579px) {
+    transition: all 0.2s ease-in-out;
+    margin-top: 40%;
+    width: 300px;
+    padding: 40px 16px;
   }
 `;
 
@@ -77,6 +77,9 @@ export const FormH1 = styled.h1`
   font-size: 20px;
   font-weight: 400;
   text-align: center;
+  @media screen and (max-width: 579px) {
+    margin-left: -5%;
+  }
 `;
 
 export const FormLabel = styled.label`
@@ -90,6 +93,9 @@ export const FormInput = styled.input`
   margin-bottom: 32px;
   border: none;
   border-radius: 4px;
+  @media screen and (max-width: 579px) {
+    width: 75%;
+  }
 `;
 
 export const FormButton = styled.button`
@@ -106,6 +112,10 @@ export const FormButton = styled.button`
     transition: all 0.2s ease-in-out;
     background: #f57c00;
   }
+  @media screen and (max-width: 579px) {
+    width: 75%;
+    margin-left: 5%;
+  }
 `;
 
 export const Text = styled.span`
@@ -118,5 +128,8 @@ export const Text = styled.span`
   &:hover {
     transition: all 0.2s ease-in-out;
     color: #f57c00;
+  }
+  @media screen and (max-width: 579px) {
+    margin-left: -5%;
   }
 `;

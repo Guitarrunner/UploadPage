@@ -35,7 +35,7 @@ export const CoursesData = [
     h: "Edição de vídeo",
     p: "Criação e edição de vídeos e animações com as principais ferramentas profissionais do mercado.",
     p2: "Observação, criatividade,  senso crítico e percepção visual.",
-    link: "/cursos/esdiçãodevideo",
+    link: "/cursos/ediçãodevideo",
   },
   {
     icon: icon5,

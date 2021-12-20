@@ -14,9 +14,9 @@ export const ContactSection = styled.section`
   &::-webkit-scrollbar {
     display: none;
   }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1200px) {
     transition: all 0.2s ease-in-out;
-    height: 600px;
+    height: 1000px;
   }
 `;
 
@@ -44,12 +44,14 @@ export const InfoContainer = styled.div`
   height: 500px;
   margin-bottom: 10px;
   overflow-y: hidden;
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1200px) {
     transition: all 0.2s ease-in-out;
-    height: 470px;
+    height: 950px;
+    width: 70%;
   }
   @media screen and (max-width: 760px) {
     padding: 50px 0;
+    height: 900px;
     width: 92%;
   }
 `;
@@ -61,7 +63,7 @@ export const InfoWrapper = styled.div`
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1200px) {
     transition: all 0.2s ease-in-out;
     height: 1000px;
   }
@@ -70,7 +72,6 @@ export const InfoWrapper = styled.div`
 export const UnitH1 = styled.h1`
   font-size: 2.5rem;
   color: #fff;
-  margin-top: 16px;
   left: 50%;
   text-align: center;
 
@@ -87,7 +88,7 @@ export const InfoRow = styled.div`
   padding: 30px;
   grid-template-areas: "col1 col2";
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1200px) {
     grid-template-areas: "col1 col1" "col2 col2";
   }
   @media screen and (max-width: 400px) {
@@ -98,18 +99,34 @@ export const Column1 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col1;
+  @media screen and (max-width: 1200px) {
+    margin-top: -5%;
+  }
+  @media screen and (max-width: 500px) {
+    margin-top: -25%;
+  }
 `;
 export const Column2 = styled.div`
   margin-bottom: 15px;
 
   padding: 0 15px;
   grid-area: col2;
+  @media screen and (max-width: 1200px) {
+    margin-top: 5%;
+    padding: 0 0px;
+    margin-left: -15px;
+  }
+  @media screen and (max-width: 500px) {
+    margin-top: 25%;
+    padding: auto;
+    margin-left: 10px;
+  }
 `;
 export const TextWrapper = styled.div`
   max-width: 600px;
   margin: auto;
   @media screen and (max-width: 400px) {
-    max-width: 270px;
+    max-width: 300px;
   }
 `;
 
@@ -165,7 +182,7 @@ export const FormContent = styled.div`
   flex-direction: column;
   justify-content: center;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 1200px) {
     padding: 10px;
   }
 `;
@@ -183,9 +200,11 @@ export const Form = styled.form`
   border-radius: 4px;
   box-shadow: 0 1px 3px rbga(0, 0, 0, 0.9);
 
-  @media screen and (max-width: 900px) {
-    max-width: 300px;
-    padding: 32px 32px;
+  @media screen and (max-width: 1200px) {
+    width: 85%;
+  }
+  @media screen and (max-width: 500px) {
+    width: 75%;
   }
 `;
 
@@ -196,10 +215,16 @@ export const FormH1 = styled.h1`
   height: 20px;
   font-weight: 400;
   text-align: center;
+  @media screen and (max-width: 900px) {
+    font-size: 15px;
+  }
+  @media screen and (max-width: 400px) {
+    font-size: 15px;
+  }
 `;
 
 export const InputWrapper = styled.div`
-  margin-top: -64px;
+  margin-top: -80px;
 `;
 
 export const FormLabel = styled.label`
@@ -218,7 +243,7 @@ export const FormInput = styled.input`
 
 export const FormInput2 = styled.input`
   padding: 16px 16px;
-  height: 50px;
+  height: 45%;
   width: 90%;
   border: none;
   border-radius: 4px;
@@ -235,10 +260,16 @@ export const FormButton = styled.button`
   font-size: 20px;
   cursor: pointer;
   left: 30%;
-  bottom: 5%;
+  bottom: 3%;
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #f57c00;
+  }
+  @media screen and (max-width: 1200px) {
+    width: 150px;
+  }
+  @media screen and (max-width: 400px) {
+    width: 100px;
   }
 `;
 

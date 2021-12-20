@@ -25,7 +25,7 @@ const Navbar = ({ toggle, on }: { toggle: any; on: any }) => {
     <>
       <NavbarBigContainer>
         <a href="http://localhost:3000/">
-          <Logo src={logo} onClick={toggleHome} />
+          <Logo src={logo} />
         </a>
         <Nav>
           <NavbarContainer>

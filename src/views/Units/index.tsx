@@ -31,7 +31,7 @@ const Units = ({ data }: { data: any }) => {
           {data.map((data: any, index: any) => {
             return (
               <InfoContainer>
-                <InfoRow>
+                <InfoRow id={data.id}>
                   <Column1>
                     <TextWrapper>
                       <TopLine>{data.top}</TopLine>

@@ -43,6 +43,7 @@ function App() {
           <Route path="/franqueado" element={<Franchise />} />
           <Route path="/blog" element={<Blog />} />
         </Routes>
+        <Footer />
       </Router>
       <div>
         <div className="wrapper">
@@ -101,7 +102,6 @@ function App() {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

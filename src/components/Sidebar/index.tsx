@@ -18,24 +18,24 @@ const Sidebar = ({ isOpen, toggle }: { isOpen: any; toggle: any }) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="courses" onClick={toggle}>
+          <SidebarLink to="/cursos" onClick={toggle}>
             Cursos
           </SidebarLink>
-          <SidebarLink to="units" onClick={toggle}>
+          <SidebarLink to="/unidades" onClick={toggle}>
             Unidades
           </SidebarLink>
-          <SidebarLink to="contact" onClick={toggle}>
+          <SidebarLink to="/contato" onClick={toggle}>
             Contato
           </SidebarLink>
-          <SidebarLink to="about" onClick={toggle}>
+          <SidebarLink to="/sobre" onClick={toggle}>
             Sobre nos
           </SidebarLink>
-          <SidebarLink to="signup" onClick={toggle}>
+          <SidebarLink to="/signup" onClick={toggle}>
             Iniciar sessão
           </SidebarLink>
 
           <SideBtnWrap>
-            <Button to="/singin" onClick={toggle}>
+            <Button to="/signin" onClick={toggle}>
               Cadastre-se
             </Button>
           </SideBtnWrap>

@@ -51,9 +51,10 @@ const Contact = () => {
                       Em caso de dúvidas, entre em contato com nossa secretaria
                       ou através do formulário.
                     </Subtitle>
-
-                    <Subtitle>Horário de funcionamento: </Subtitle>
-                    <Subtitle>de Segunda a Sábado das 8h às 20h</Subtitle>
+                    <div>
+                      <Subtitle>Horário de funcionamento: </Subtitle>
+                      <Subtitle>de Segunda a Sábado das 8h às 20h</Subtitle>
+                    </div>
                   </Form2>
                 </TextWrapper>
               </Column1>

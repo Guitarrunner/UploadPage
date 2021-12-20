@@ -25,6 +25,7 @@ const Courses = ({ data }: { data: any }) => {
   const toggle = () => {
     setisOpen(!isOpen);
   };
+  console.log(window.location.href);
   return (
     <>
       <ScrollToTop />
