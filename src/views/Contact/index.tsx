@@ -8,14 +8,17 @@ import {
   ContactSection,
   ContactWrapper,
   Form,
+  Form2,
   FormButton,
   FormContent,
   FormH1,
   FormInput,
+  FormInput2,
   FormLabel,
   Heading,
   InfoContainer,
   InfoRow,
+  InputWrapper,
   Subtitle,
   TextWrapper,
   TopLine,
@@ -38,29 +41,38 @@ const Contact = () => {
             <InfoRow>
               <Column1>
                 <TextWrapper>
-                  <TopLine>
-                    Av. Jorge Amado, 2464 Shopping Imbui Plaza, Loja 109
-                    Salvador, BA
-                  </TopLine>
-                  <Heading>Contate-nos</Heading>
-                  <Subtitle>
-                    Em caso de dúvidas, entre em contato com nossa secretaria ou
-                    através do formulário.
-                  </Subtitle>
-                  <Subtitle>Horário de funcionamento: </Subtitle>
-                  <Subtitle>de Segunda a Sábado das 8h às 20h</Subtitle>
+                  <Form2>
+                    <TopLine>
+                      Av. Jorge Amado, 2464 Shopping Imbui Plaza, Loja 109
+                      Salvador, BA
+                    </TopLine>
+                    <Heading>Contate-nos</Heading>
+                    <Subtitle>
+                      Em caso de dúvidas, entre em contato com nossa secretaria
+                      ou através do formulário.
+                    </Subtitle>
+
+                    <Subtitle>Horário de funcionamento: </Subtitle>
+                    <Subtitle>de Segunda a Sábado das 8h às 20h</Subtitle>
+                  </Form2>
                 </TextWrapper>
               </Column1>
               <Column2>
                 <FormContent>
                   <Form action="#">
                     <FormH1>Deixe o seu comentário</FormH1>
-                    <FormLabel htmlFor="for">Email</FormLabel>
-                    <FormInput type="email" required></FormInput>
-                    <FormLabel htmlFor="for">Nome</FormLabel>
-                    <FormInput type="text" required></FormInput>
-                    <FormLabel htmlFor="for">Mensagem</FormLabel>
-                    <FormInput type="text" required></FormInput>
+                    <InputWrapper>
+                      <FormLabel htmlFor="for">Email</FormLabel>
+                      <FormInput type="email" required></FormInput>
+                    </InputWrapper>
+                    <InputWrapper>
+                      <FormLabel htmlFor="for">Nome</FormLabel>
+                      <FormInput type="text" required></FormInput>
+                    </InputWrapper>
+                    <InputWrapper>
+                      <FormLabel htmlFor="for">Mensagem</FormLabel>
+                      <FormInput2 type="textarea" required></FormInput2>
+                    </InputWrapper>
                     <FormButton type="submit">Prosseguir</FormButton>
                   </Form>
                 </FormContent>

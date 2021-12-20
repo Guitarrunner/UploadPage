@@ -21,7 +21,7 @@ export const ContactSection = styled.section`
 `;
 
 export const ContactWrapper = styled.div`
-  margin-top: 5%;
+  margin-top: 2%;
   z-index: 1;
   height: 550px;
   width: 80%;
@@ -41,8 +41,7 @@ export const InfoContainer = styled.div`
   background: #f9f9f9;
   width: 90%;
   overflow-x: hidden;
-  height: 450px;
-  margin-bottom: 10px;
+  height: 500px;
   margin-bottom: 10px;
   overflow-y: hidden;
   @media screen and (max-width: 900px) {
@@ -58,12 +57,10 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 500px;
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
-  justify-content: center;
   @media screen and (max-width: 900px) {
     transition: all 0.2s ease-in-out;
     height: 1000px;
@@ -104,17 +101,36 @@ export const Column1 = styled.div`
 `;
 export const Column2 = styled.div`
   margin-bottom: 15px;
+
   padding: 0 15px;
   grid-area: col2;
 `;
 export const TextWrapper = styled.div`
   max-width: 600px;
-  paddig-top: auto;
-  paddig-bottom: 60px;
+  margin: auto;
   @media screen and (max-width: 400px) {
     max-width: 270px;
   }
 `;
+
+export const Form2 = styled.form`
+  max-width: 400px;
+  width: auto;
+  height: 350px;
+  max-height: 350px;
+  z-index: 1;
+  display: grid;
+  margin: 0 auto;
+  padding: 40px 32px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rbga(0, 0, 0, 0.9);
+
+  @media screen and (max-width: 900px) {
+    max-width: 300px;
+    padding: 32px 32px;
+  }
+`;
+
 export const TopLine = styled.p`
   color: #04c4d9;
   font-size: 16px;
@@ -125,7 +141,6 @@ export const TopLine = styled.p`
   margin-bottom: 16px;
 `;
 export const Heading = styled.h1`
-  margin-bottom: 24px;
   font-size: 48px;
   line-height: 1.1;
   font-weight: 600;
@@ -139,7 +154,6 @@ export const Heading = styled.h1`
 `;
 
 export const Subtitle = styled.p`
-  margin-top: 24px;
   max-width: 440px;
   font-size: 18px;
   line-height: 24px;
@@ -149,7 +163,7 @@ export const FormContent = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
-  justijy-content: center;
+  justify-content: center;
 
   @media screen and (max-width: 480px) {
     padding: 10px;
@@ -157,11 +171,11 @@ export const FormContent = styled.div`
 `;
 
 export const Form = styled.form`
+  position: relative;
   background: #101522;
-  max-width: 400px;
-  width: auto;
-  height: 300px;
-  max-height: 300px;
+  width: 400px;
+  height: 350px;
+  max-height: 350px;
   z-index: 1;
   display: grid;
   margin: 0 auto;
@@ -176,36 +190,52 @@ export const Form = styled.form`
 `;
 
 export const FormH1 = styled.h1`
+  margin-top: -16px;
   color: #fff;
   font-size: 20px;
+  height: 20px;
   font-weight: 400;
   text-align: center;
 `;
 
+export const InputWrapper = styled.div`
+  margin-top: -64px;
+`;
+
 export const FormLabel = styled.label`
-  margin-bottom: 8px;
   font-size: 14px;
   color: #fff;
 `;
 
 export const FormInput = styled.input`
   padding: 16px 16px;
-  margin-bottom: 32px;
-  height: 16px;
+  margin-bottom: 8px;
+  height: 5px;
+  width: 90%;
+  border: none;
+  border-radius: 4px;
+`;
+
+export const FormInput2 = styled.input`
+  padding: 16px 16px;
+  height: 50px;
+  width: 90%;
   border: none;
   border-radius: 4px;
 `;
 
 export const FormButton = styled.button`
+  position: absolute;
   background: #04c4d9;
   padding: 16px 0;
   border: none;
   border-radius: 4px;
-  width: 400px;
+  width: 200px;
   color: #000;
   font-size: 20px;
   cursor: pointer;
-
+  left: 30%;
+  bottom: 5%;
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #f57c00;
