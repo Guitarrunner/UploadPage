@@ -44,6 +44,12 @@ export const CarrouselData = [
     subtitle: "Carro ecológico",
     image: image7,
   },
+
+  {
+    title: "Projetos",
+    subtitle: "Carro",
+    image: image7,
+  },
   {
     title: "Projetos",
     subtitle: "Pagina web",
