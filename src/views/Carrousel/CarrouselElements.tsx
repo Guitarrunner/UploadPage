@@ -4,7 +4,7 @@ import { IoArrowForward, IoArrowBack } from "react-icons/io5";
 
 export const CarouselSection = styled.section`
   background: #04c4d9;
-  margin-top: 150px;
+
   height: 510px;
   overflow: hidden;
 
@@ -16,8 +16,8 @@ export const CarouselSection = styled.section`
 export const CarouselWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 510px;
-  max-width: 1100px;
+  height: 100%;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
@@ -28,6 +28,10 @@ export const CarouselWrapper = styled.div`
   }
 `;
 
+export const CarouselSubWrapper = styled.div`
+  z-index: 5;
+`;
+
 export const CarouselSlide = styled.div`
   z-index: 1;
   width: 100%;
@@ -36,7 +40,6 @@ export const CarouselSlide = styled.div`
 `;
 
 export const CarouselSlider = styled.div`
-position:absolute;
 top:35%;
 left:10%;
 width: 100%:
@@ -110,7 +113,6 @@ export const CarouselP = styled.p`
 `;
 
 export const CarouselButtons = styled.button`
-  position: absolute;
   bottom: 5%;
   left: 40%;
   display: flex;

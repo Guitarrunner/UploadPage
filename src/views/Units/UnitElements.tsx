@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const UnitSection = styled.section`
   background: #04c4d9;
   margin-top: 150px;
-  height: 1450px;
+  height: 2500px;
   overflow-x: hidden;
 
   @media screen and (max-width: 760px) {
@@ -40,7 +40,7 @@ export const InfoContainer = styled.div`
   background: #f9f9f9;
   width: 90%;
   overflow-x: hidden;
-  height: 250px;
+  height: 450px;
   margin-bottom: 10px;
   margin-bottom: 10px;
 
@@ -73,8 +73,9 @@ export const InfoWrapper = styled.div`
 export const InfoRow = styled.div`
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
-
   padding: 30px;
+  height: 400px;
+  margin: 0 auto;
   grid-template-areas: "col1 col2";
 
   @media screen and (max-width: 900px) {
@@ -85,7 +86,7 @@ export const InfoRow = styled.div`
   }
 `;
 export const Column1 = styled.div`
-  margin-bottom: 15px;
+  margin: auto;
   padding: 0 15px;
   grid-area: col1;
 `;
@@ -102,6 +103,15 @@ export const TextWrapper = styled.div`
     max-width: 270px;
   }
 `;
+
+export const TextDiv = styled.div`
+  margin-bottom: 70px;
+
+  @media screen and (max-width: 900px) {
+    margin-bottom: 30px;
+  }
+`;
+
 export const TopLine = styled.p`
   color: #04c4d9;
   font-size: 16px;
