@@ -20,7 +20,7 @@ dl {
   justify-content: center;
   text-align: center;
   margin: 0;
-  color: whitesmoke;
+  color: black;
 
   * {
     position: absolute;
@@ -32,7 +32,7 @@ dl {
 
 dt {
   --size: 20vmin;
-
+  color: black;
   bottom: 50%;
   width: var(--size);
   height: var(--size);
@@ -68,7 +68,7 @@ dt {
 
 dd {
   --size: 5vmin;
-
+  color: black;
   top: 55%;
   padding-left: 2rem;
   padding-right: 2rem;

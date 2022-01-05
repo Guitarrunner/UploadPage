@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const LandingSection = styled.section`
-  background: #000;
+  background: #fff;
   margin-top: 150px;
   height: 510px;
   overflow: hidden;

@@ -4,6 +4,7 @@ import Sidebar from "../../components/Sidebar";
 import ScrollToTop from "../ScrollToTop";
 import { LandingSection, LandingWrapper } from "./LandingElements";
 import "./index.scss";
+import icon from "./sharingan.svg";
 function Landing() {
   const [isOpen, setisOpen] = useState(false);
   const toggle = () => {
@@ -18,7 +19,9 @@ function Landing() {
       <LandingSection>
         <LandingWrapper>
           <dl>
-            <dt>0</dt>
+            <dt>
+              <img src={icon} />
+            </dt>
             <dd>Start on top and around you go. That's how you make a zero!</dd>
             <dt>1</dt>
             <dd>
