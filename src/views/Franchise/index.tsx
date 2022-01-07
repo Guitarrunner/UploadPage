@@ -9,6 +9,7 @@ function Franchise() {
   const toggle = () => {
     setisOpen(!isOpen);
   };
+
   return (
     <>
       <ScrollToTop />

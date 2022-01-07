@@ -10,6 +10,7 @@ import {
   InfoRow,
   Map,
   Subtitle,
+  TextDiv,
   TextWrapper,
   TopLine,
   UnitSection,
@@ -34,8 +35,10 @@ const Units = ({ data }: { data: any }) => {
                 <InfoRow id={data.id}>
                   <Column1>
                     <TextWrapper>
-                      <TopLine>{data.top}</TopLine>
-                      <Heading>{data.headline}</Heading>
+                      <TextDiv>
+                        <TopLine>{data.top}</TopLine>
+                        <Heading>{data.headline}</Heading>
+                      </TextDiv>
                       <Subtitle>Horário de funcionamento: </Subtitle>
                       <Subtitle>{data.text}</Subtitle>
                       <Subtitle>{data.tel}</Subtitle>
