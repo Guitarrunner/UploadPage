@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Alata&display=swap");
 
 $count: 10;
-$multiplier: 4.5s;
+$multiplier: 4.35s;
 $ease1: cubic-bezier(0.23, 1, 0.32, 1);
 $ease2: cubic-bezier(0.19, 1, 0.22, 1);
-$colors: #00a8e8, #f2bb05, #84a07c, #e05263, #465362, #593c8f, #9e0059, #357266,
+$colors: #8ecae6, #219ebc, #023047, #ffb703, #fb8500, #593c8f, #9e0059, #357266,
   #11b5e4, #59ffa0;
 
 body {
@@ -20,7 +20,7 @@ dl {
   justify-content: center;
   text-align: center;
   margin: 0;
-  color: black;
+  color: white;
 
   * {
     position: absolute;
@@ -32,7 +32,7 @@ dl {
 
 dt {
   --size: 20vmin;
-  color: black;
+  color: white;
   bottom: 50%;
   width: var(--size);
   height: var(--size);
@@ -66,9 +66,14 @@ dt {
   }
 }
 
+.img1 {
+  width: 100px;
+  height: 100px;
+}
+
 dd {
   --size: 5vmin;
-  color: black;
+  color: white;
   top: 55%;
   padding-left: 2rem;
   padding-right: 2rem;

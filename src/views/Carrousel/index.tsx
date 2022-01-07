@@ -12,7 +12,6 @@ import {
   NextArrow,
   CarouselH1,
   CarouselP,
-  CarouselSubWrapper,
 } from "./CarrouselElements";
 
 const Carrousel = ({ slides }: { slides: any }) => {
