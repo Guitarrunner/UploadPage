@@ -21,54 +21,64 @@ function Franchise() {
         <FranchiseWrapper>
           <section className="cards-wrapper">
             <div className="card-grid-space">
-              <div className="num">01</div>
               <a
                 className="card"
                 href="https://codetheweb.blog/2017/10/06/html-syntax/"
               >
                 <div>
-                  <h1>HTML Syntax</h1>
+                  <h1>HENRIQUE GUIMARÃES</h1>
                   <p>
-                    The syntax of a language is how it works. How to actually
-                    write it. Learn HTML syntax…
+                    Eu só vejo benefícios ao falar da Upload. Inaugurei há pouco
+                    tempo e já tenho uma resposta muito positiva do mercado.
+                    Recebo todo o apoio da licenciadora, seja no suporte do
+                    material didático ou no apoio do marketing. Fico muito feliz
+                    em poder participar desta grande família!
                   </p>
-                  <div className="date">6 Oct 2017</div>
                   <div className="tags">
-                    <div className="tag">HTML</div>
+                    <div className="tag">IPIAÚ</div>
                   </div>
                 </div>
               </a>
             </div>
             <div className="card-grid-space">
-              <div className="num">02</div>
               <a
                 className="card"
                 href="https://codetheweb.blog/2017/10/09/basic-types-of-html-tags/"
               >
                 <div>
-                  <h1>Basic types of HTML tags</h1>
-                  <p>Learn about some of the most common HTML tags…</p>
-                  <div className="date">9 Oct 2017</div>
+                  <h1>PATRÍCIA FRANÇA</h1>
+                  <p>
+                    A experiência tem sido maravilhosa, apesar dos altos e
+                    baixos de quem empreende. Os desafios que enfrentamos
+                    diariamente, tentando mostrar a professores, diretores e
+                    gestores e, sobretudo, aos pais, que não somos somente mais
+                    um curso de informática, mas estamos oferecendo uma formação
+                    tecnológica, ampliando os conhecimentos e aplicando a
+                    tecnologia para o benefício da sociedade, nos faz acreditar
+                    que vale a pena o desafio.
+                  </p>
                   <div className="tags">
-                    <div className="tag">HTML</div>
+                    <div className="tag">ILHÉUS</div>
                   </div>
                 </div>
               </a>
             </div>
             <div className="card-grid-space">
-              <div className="num">03</div>
               <a
                 className="card"
                 href="https://codetheweb.blog/2017/10/14/links-images-about-file-paths/"
               >
                 <div>
-                  <h1>Links, images and about file paths</h1>
+                  <h1>JÉSSICA CUNHA</h1>
                   <p>
-                    Learn how to use links and images along with file paths…
+                    O que posso falar é que estou realizada! O retorno tem sido
+                    muito positivo por nosso público, principalmente pelas
+                    crianças e jovens antenados no universo pop! Às vezes, tenho
+                    algumas dúvidas e necessito do suporte, mas ao decorrer,
+                    estamos nos conceituando sem problemas!
                   </p>
-                  <div className="date">14 Oct 2017</div>
                   <div className="tags">
-                    <div className="tag">HTML</div>
+                    <div className="tag">JEQUIÉ</div>
                   </div>
                 </div>
               </a>

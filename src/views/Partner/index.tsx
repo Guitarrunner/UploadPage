@@ -2,10 +2,16 @@ import React, { useState } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Sidebar from "../../components/Sidebar";
 import ScrollToTop from "../ScrollToTop";
-import { PartnerSection, PartnerWrapper } from "./PartnerElements";
+import {
+  PartnerImage,
+  PartnerSection,
+  PartnerWrapper,
+  PartnerWrapper2,
+} from "./PartnerElements";
 import "./index.css";
 import "./index.scss";
 import icon from "./robot1.svg";
+import fondo from "./fondo.svg";
 import Feature from "../../components/Feature/Feature";
 
 function Partner() {
@@ -32,7 +38,6 @@ function Partner() {
               da era digital
             </h1>
             <img src={icon} width="100px" height="100px" />
-            <p>Explore the Library</p>
           </div>
           <div className="gpt3__whatgpt3-container">
             <Feature
@@ -49,47 +54,55 @@ function Partner() {
             />
           </div>
         </PartnerWrapper>
+        <PartnerWrapper2>
+          <link
+            href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+            rel="stylesheet"
+          />
+          <button className="noselect">Seja uma escola parceira</button>
+          <PartnerImage src={fondo} />
+        </PartnerWrapper2>
         <PartnerWrapper>
           <section className="dl-blurbs">
             <dl className="dl">
-              <dt className="dt">Design</dt>
+              <dt className="dt">Material didático próprio e completo </dt>
               <dd className="dd">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed
-                nisi. Nulla quis sem at nibh elementum imperdiet.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit..
               </dd>
-              <dt className="dt">Develop</dt>
+              <dt className="dt">Sala de aula invertida </dt>
               <dd className="dd">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed
-                nisi. Nulla quis sem at nibh elementum imperdiet.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit..
               </dd>
-              <dt className="dt">Test</dt>
+              <dt className="dt">Grades curriculares adequadas</dt>
               <dd className="dd">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed
-                nisi. Nulla quis sem at nibh elementum imperdiet.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit..
+              </dd>
+              <dt className="dt">
+                Treinamento e certificação da equipe UPLOAD
+              </dt>
+              <dd className="dd">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit..
               </dd>
             </dl>
             <dl className="dl">
-              <dt className="dt">Deliver</dt>
+              <dt className="dt">Currículo alinhado com a BNCC</dt>
               <dd className="dd">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed
-                nisi. Nulla quis sem at nibh elementum imperdiet.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit..
               </dd>
-              <dt className="dt">Rinse</dt>
+              <dt className="dt">
+                Solução completa no ensino de amplas tecnologias
+              </dt>
               <dd className="dd">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed
-                nisi. Nulla quis sem at nibh elementum imperdiet.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit..
               </dd>
 
-              <dt className="dt">Repeat</dt>
+              <dt className="dt">Suporte tecnológico</dt>
               <dd className="dd">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed
-                nisi. Nulla quis sem at nibh elementum imperdiet.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit..
+              </dd>
+              <dt className="dt">Método de ensino próprio alinhando - STEAM</dt>
+              <dd className="dd">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit..
               </dd>
             </dl>
           </section>

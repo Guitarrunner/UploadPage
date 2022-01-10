@@ -17,18 +17,18 @@ $tablet-width: 768px;
 $desktop-width: 1024px;
 
 /* COLOR HEX */
-$cadet: #4f6d7aff;
-$maximum-blue: #5ea5b8ff;
+$cadet: #f9f9f9;
+$maximum-blue: #101522;
 $columbia-blue: #c0d6dfff;
 $platinum: #eaeaeaff;
 $cultured: #f3f3f3ff;
-$nero: #444444;
+$nero: #101522;
 
 /* COLOR Gradient */
 $dl-gradient-right: linear-gradient(
   90deg,
-  rgba(0, 0, 0, 0.04) 20%,
-  rgba(255, 255, 255, 0) 0%
+  rgba(241, 100, 6, 0.04) 20%,
+  rgba(218, 128, 11, 0) 20%
 );
 
 $body-background-color: $platinum;
@@ -100,7 +100,7 @@ body {
   counter-increment: count;
   color: $cadet;
   font-family: $base-font-family;
-  font-size: 4vw;
+  font-size: 1.5rem;
   text-transform: uppercase;
 }
 .dt::before {

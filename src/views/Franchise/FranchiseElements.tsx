@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const FranchiseSection = styled.section`
   background: #04c4d9;
   margin-top: 150px;
-  height: 510px;
+  height: 810px;
   overflow: hidden;
 
   @media screen and (max-width: 760px) {
