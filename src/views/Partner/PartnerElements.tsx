@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const PartnerSection = styled.section`
   background: #04c4d9;
-  margin-top: 150px;
-  height: 510px;
+  margin-top: 160px;
+  height: 1610px;
   overflow: hidden;
 
   @media screen and (max-width: 760px) {
@@ -16,6 +16,7 @@ export const PartnerWrapper = styled.div`
   z-index: 1;
   height: 510px;
   max-width: 1100px;
+  margin-top: 100px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
