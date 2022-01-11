@@ -4,7 +4,15 @@ import Sidebar from "../../components/Sidebar";
 import ScrollToTop from "../ScrollToTop";
 
 import "./index.css";
-import { FranchiseSection, FranchiseWrapper } from "./FranchiseElements";
+import "./index.scss";
+import {
+  FranchiseImage,
+  FranchiseSection,
+  FranchiseWrapper,
+  FranchiseWrapper2,
+  FranchiseWrapper3,
+} from "./FranchiseElements";
+import fondo from "./bg.jpg";
 
 function Franchise() {
   const [isOpen, setisOpen] = useState(false);
@@ -18,14 +26,60 @@ function Franchise() {
       <Navbar toggle={toggle} on="franchise" />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <FranchiseSection>
+        <FranchiseWrapper2>
+          <div className="blog-card spring-fever">
+            <div className="title-content">
+              <h3>EM ESCOLAS</h3>
+              <hr />
+              <div className="intro">
+                Entre para a rede de ensino Upload e se torne um empreendedor de
+                sucesso.
+              </div>
+            </div>
+            <div className="card-info">
+              A Upload potencializa o aprendizado dos alunos nas escolas aliando
+              educação e tecnologia. Temos um sistema de ensino próprio para
+              escolas.
+            </div>
+            <div className="utility-info">
+              <ul className="utility-list"></ul>
+            </div>
+            <div className="gradient-overlay"></div>
+            <div className="color-overlay"></div>
+          </div>
+          <div className="blog-card2 spring-fever">
+            <div className="title-content">
+              <h3>NOSSOS CURSOS</h3>
+              <hr />
+              <div className="intro">
+                Conheça mais sobre o modelo de negócio e invista em um mercado
+                inovador
+              </div>
+            </div>
+            <div className="card-info">
+              Dos 5 aos 105 anos, a Upload é para todos. Temos cursos com grades
+              curriculares adequadas para cada faixa etária
+            </div>
+            <div className="utility-info">
+              <ul className="utility-list"></ul>
+            </div>
+            <div className="gradient-overlay"></div>
+            <div className="color-overlay"></div>
+          </div>
+        </FranchiseWrapper2>
+        <FranchiseWrapper3>
+          <link
+            href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+            rel="stylesheet"
+          />
+          <button className="noselect">Seja uma escola parceira</button>
+          <FranchiseImage src={fondo} />
+        </FranchiseWrapper3>
         <FranchiseWrapper>
           <section className="cards-wrapper">
             <div className="card-grid-space">
-              <a
-                className="card"
-                href="https://codetheweb.blog/2017/10/06/html-syntax/"
-              >
-                <div>
+              <a className="card">
+                <div className="div1">
                   <h1>HENRIQUE GUIMARÃES</h1>
                   <p>
                     Eu só vejo benefícios ao falar da Upload. Inaugurei há pouco
@@ -41,11 +95,8 @@ function Franchise() {
               </a>
             </div>
             <div className="card-grid-space">
-              <a
-                className="card"
-                href="https://codetheweb.blog/2017/10/09/basic-types-of-html-tags/"
-              >
-                <div>
+              <a className="card">
+                <div className="div1">
                   <h1>PATRÍCIA FRANÇA</h1>
                   <p>
                     A experiência tem sido maravilhosa, apesar dos altos e
@@ -64,11 +115,8 @@ function Franchise() {
               </a>
             </div>
             <div className="card-grid-space">
-              <a
-                className="card"
-                href="https://codetheweb.blog/2017/10/14/links-images-about-file-paths/"
-              >
-                <div>
+              <a className="card">
+                <div className="div1">
                   <h1>JÉSSICA CUNHA</h1>
                   <p>
                     O que posso falar é que estou realizada! O retorno tem sido

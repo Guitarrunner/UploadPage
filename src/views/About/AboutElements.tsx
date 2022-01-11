@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const AboutSection = styled.section`
   background: #04c4d9;
   margin-top: 150px;
-  height: 510px;
+  height: 1110px;
   overflow: hidden;
 
   @media screen and (max-width: 760px) {
