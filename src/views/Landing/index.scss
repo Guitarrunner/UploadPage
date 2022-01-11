@@ -13,7 +13,7 @@ body {
   font-family: "Alata", sans-serif;
 }
 
-dl {
+.dl2 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,7 +30,7 @@ dl {
   }
 }
 
-dt {
+.dt2 {
   --size: 20vmin;
   color: white;
   bottom: 50%;
@@ -71,7 +71,7 @@ dt {
   height: 100px;
 }
 
-dd {
+.dd2 {
   --size: 5vmin;
   color: white;
   top: 55%;

@@ -22,7 +22,7 @@ export const Button = styled(LinkR)<Props>`
   border: none;
   cursor: pointer;
   display: flex;
-  
+  z-index:11;
   text-decoration: none;
   justify-content: center;
   align-items: center:

@@ -57,73 +57,73 @@ function Landing() {
                     <CarouselImage src={slide.image} />
                   </CarouselSlider>
                 )}
-                <dl>
-                  <dt>
+                <dl className="dl2">
+                  <dt className="dt2">
                     <Img1 src={icon} />
                   </dt>
-                  <dd>
+                  <dd className="dd2">
                     Start on top and around you go. That's how you make a zero!
                   </dd>
-                  <dt>
+                  <dt className="dt2">
                     <Img1 src={base1} />
                   </dt>
-                  <dd>
+                  <dd className="dd2">
                     Go straight down and then you're done. That's the way to
                     make a one.
                   </dd>
-                  <dt>
+                  <dt className="dt2">
                     <Img1 src={base2} />
                   </dt>
-                  <dd>
+                  <dd className="dd2">
                     Make a candy cane and then a shoe. That's the way to make a
                     two!
                   </dd>
-                  <dt>
+                  <dt className="dt2">
                     <Img1 src={base3} />
                   </dt>
-                  <dd>
+                  <dd className="dd2">
                     Around a tree. Around a tree. That's the way to make a
                     three!
                   </dd>
-                  <dt>
+                  <dt className="dt2">
                     <Img1 src={base4} />
                   </dt>
-                  <dd>
+                  <dd className="dd2">
                     Down, across, and down some more. That is how you make a
                     four!
                   </dd>
-                  <dt>
+                  <dt className="dt2">
                     <Img1 src={icon} />
                   </dt>
-                  <dd>
+                  <dd className="dd2">
                     Take a drive. Swim around. To make a five come back to the
                     ground.
                   </dd>
-                  <dt>
+                  <dt className="dt2">
                     <Img1 src={base1} />
                   </dt>
-                  <dd>
+                  <dd className="dd2">
                     Slide down and around to pick up sticks. That is the way to
                     make a six.
                   </dd>
-                  <dt>
+                  <dt className="dt2">
                     <Img1 src={base2} />
                   </dt>
-                  <dd>
+                  <dd className="dd2">
                     Straight across and down from heaven. That is how you make a
                     seven!
                   </dd>
-                  <dt>
+                  <dt className="dt2">
                     <Img1 src={base3} />
                   </dt>
-                  <dd>
+                  <dd className="dd2">
                     Make an S but don't just wait. Come back up to make an
                     eight!
                   </dd>
-                  <dt>
+                  <dt className="dt2">
                     <Img1 src={base4} />
                   </dt>
-                  <dd>
+                  <dd className="dd2">
                     Make a loop and then a line. That's the way to make a nine!
                   </dd>
                 </dl>
