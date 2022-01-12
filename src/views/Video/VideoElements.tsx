@@ -7,7 +7,6 @@ export const VideoContainer = styled.div`
   width: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
-
   @media screen and (max-width: 760px) {
     padding: 50px 0;
   }
