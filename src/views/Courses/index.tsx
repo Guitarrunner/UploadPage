@@ -5,7 +5,6 @@ import Sidebar from "../../components/Sidebar";
 import ScrollToTop from "../ScrollToTop";
 
 import {
-  Button,
   CoursesCard,
   CoursesH1,
   CoursesH2,

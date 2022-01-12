@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ColumnContainer = styled.div`
-  height: 500px;
+  height: 550px;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;

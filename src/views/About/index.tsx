@@ -54,7 +54,7 @@ function About() {
                 <div className="card3-title">Nossos Cursos mais procurados</div>
               </div>
             </div>
-            <div className="card form2">
+            <div className="card3 form2">
               <div className="form2-title">Cadestre-se</div>
             </div>
           </div>

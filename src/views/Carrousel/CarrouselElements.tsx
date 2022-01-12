@@ -40,14 +40,13 @@ export const CarouselSlide = styled.div`
 `;
 
 export const CarouselSlider = styled.div`
-top:35%;
+margin-top: 15px;
 left:10%;
 width: 100%:
 height:100%;
 
 &::before{
   content:'';
-  position: absolute;
   z-index: 3;
   width: 100%;
   height: 80vh;
@@ -113,7 +112,7 @@ export const CarouselP = styled.p`
 `;
 
 export const CarouselButtons = styled.button`
-  bottom: 5%;
+  margin-bottom: 5%;
   left: 40%;
   display: flex;
   border: none;

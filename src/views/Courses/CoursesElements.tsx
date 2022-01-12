@@ -126,7 +126,7 @@ export const CoursesH2 = styled.h2`
 `;
 
 export const CoursesP = styled.p`
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   text-align: center;
   max-width: 80%;
   color: #101522;
@@ -150,17 +150,19 @@ export const CoursesP2 = styled.p`
 
 export const CoursesP3 = styled.p`
   color: #101522;
+
   font-size: 0.9rem;
   font-weight: 600;
   text-align: center;
 `;
 
 export const CoursesP4 = styled.p`
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   text-align: center;
-  max-width: 50%;
+  
+  max-width: 55%;
   color: #101522;
-  margin-right:2%;
+  margin-right:5%;
   @media screen and (max-width:  760px) {
     max-width: 60%;
   }
