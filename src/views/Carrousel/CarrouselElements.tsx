@@ -47,7 +47,6 @@ height:100%;
 
 &::before{
   content:'';
-  position: absolute;
   z-index: 3;
   width: 100%;
   height: 80vh;
@@ -113,7 +112,6 @@ export const CarouselP = styled.p`
 `;
 
 export const CarouselButtons = styled.button`
-  bottom: 5%;
   left: 40%;
   display: flex;
   border: none;
