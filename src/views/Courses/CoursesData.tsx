@@ -21,7 +21,7 @@ export const CoursesData = [
     h: "Criação de sites",
     p: "Desenvolvimento de projetos de websites com designs responsivos e interativos com utilização de diferentes linguagens e plataformas de criação.",
     p2: "Criatividade, senso crítico, percepção visual e resolução de problemas.",
-    link: "/cursos/criaçãodesites",
+    link: "/cursos/criacaodesites",
   },
   {
     icon: icon3,
@@ -35,7 +35,7 @@ export const CoursesData = [
     h: "Edição de vídeo",
     p: "Criação e edição de vídeos e animações com as principais ferramentas profissionais do mercado.",
     p2: "Observação, criatividade,  senso crítico e percepção visual.",
-    link: "/cursos/ediçãodevideo",
+    link: "/cursos/edicaodevideo",
   },
   {
     icon: icon5,

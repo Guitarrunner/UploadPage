@@ -13,6 +13,7 @@ import {
   FranchiseWrapper3,
 } from "./FranchiseElements";
 import fondo from "./bg.jpg";
+import { FooterA } from "../../components/Footer/FooterElements";
 
 function Franchise() {
   const [isOpen, setisOpen] = useState(false);
@@ -72,7 +73,9 @@ function Franchise() {
             href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
             rel="stylesheet"
           />
-          <button className="noselect">Seja uma escola parceira</button>
+          <FooterA href="http://localhost:3000/form">
+            <button className="noselect">Seja uma escola parceira</button>
+          </FooterA>
           <FranchiseImage src={fondo} />
         </FranchiseWrapper3>
         <FranchiseWrapper>
