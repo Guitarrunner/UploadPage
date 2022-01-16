@@ -15,6 +15,7 @@ import Franchise from "./views/Franchise";
 import Blog from "./views/Blog";
 import SingleCourse from "./views/SingleCourse";
 import Form from "./views/Form";
+import { CoursesInfo } from "./CoursesData";
 
 // When the user scrolls down 50px from the top of the document, resize the header's font size
 window.onscroll = function () {
@@ -46,39 +47,47 @@ function App() {
           <Route path="/form" element={<Form />} />
           <Route
             path={"/cursos/artesdigitais"}
-            element={<SingleCourse data={"Artes Digitais"} />}
+            element={
+              <SingleCourse data={"Artes Digitais"} info={CoursesInfo[0]} />
+            }
           />
           <Route
             path={"/cursos/criacaodesites"}
-            element={<SingleCourse data={"Criação de sites"} />}
+            element={
+              <SingleCourse data={"Criação de sites"} info={CoursesInfo[1]} />
+            }
           />
           <Route
             path={"/cursos/aplicativos"}
-            element={<SingleCourse data={"Aplicativos"} />}
+            element={
+              <SingleCourse data={"Aplicativos"} info={CoursesInfo[2]} />
+            }
           />
           <Route
             path={"/cursos/edicaodevideo"}
-            element={<SingleCourse data={"Edição de video"} />}
+            element={
+              <SingleCourse data={"Edição de video"} info={CoursesInfo[3]} />
+            }
           />
           <Route
             path={"/cursos/games2d"}
-            element={<SingleCourse data={"Games 2d"} />}
+            element={<SingleCourse data={"Games 2d"} info={CoursesInfo[4]} />}
           />
           <Route
             path={"/cursos/games3d"}
-            element={<SingleCourse data={"Games 3d"} />}
+            element={<SingleCourse data={"Games 3d"} info={CoursesInfo[5]} />}
           />
           <Route
             path={"/cursos/minemods"}
-            element={<SingleCourse data={"Minemods"} />}
+            element={<SingleCourse data={"Minemods"} info={CoursesInfo[6]} />}
           />
           <Route
             path={"/cursos/robotica"}
-            element={<SingleCourse data={"Robotica"} />}
+            element={<SingleCourse data={"Robotica"} info={CoursesInfo[7]} />}
           />
           <Route
             path={"/cursos/youtuber"}
-            element={<SingleCourse data={"Youtuber"} />}
+            element={<SingleCourse data={"Youtuber"} info={CoursesInfo[8]} />}
           />
         </Routes>
         <Footer />
