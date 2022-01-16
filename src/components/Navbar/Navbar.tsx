@@ -16,6 +16,7 @@ import {
 } from "./NavbarElements";
 import { Button } from "../ButtonElement/ButtonElements";
 import { Buttonn, NavBtn2 } from "../Buttonclass/ButtonclassElements";
+import { FooterA } from "../Footer/FooterElements";
 
 const Navbar = ({ toggle, on }: { toggle: any; on: any }) => {
   const toggleHome = () => {
@@ -76,7 +77,9 @@ const Navbar = ({ toggle, on }: { toggle: any; on: any }) => {
         </Nav>
         <Nav2>
           <NavBtn2>
-            <Buttonn>Aula grátis</Buttonn>
+            <FooterA href="http://localhost:3000/contato">
+              <Buttonn>Aula grátis</Buttonn>
+            </FooterA>
           </NavBtn2>
         </Nav2>
       </NavbarBigContainer>

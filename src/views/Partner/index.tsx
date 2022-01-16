@@ -13,6 +13,7 @@ import "./index.scss";
 import icon from "./robot1.svg";
 import fondo from "./fondo.svg";
 import Feature from "../../components/Feature/Feature";
+import { FooterA } from "../../components/Footer/FooterElements";
 
 function Partner() {
   const [isOpen, setisOpen] = useState(false);
@@ -59,7 +60,9 @@ function Partner() {
             href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
             rel="stylesheet"
           />
-          <button className="noselect">Seja uma escola parceira</button>
+          <FooterA href="http://localhost:3000/form">
+            <button className="noselect">Seja uma escola parceira</button>
+          </FooterA>
           <PartnerImage src={fondo} />
         </PartnerWrapper2>
         <PartnerWrapper>

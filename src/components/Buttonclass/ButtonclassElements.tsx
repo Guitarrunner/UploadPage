@@ -11,8 +11,8 @@ export const NavBtn2 = styled.nav`
   margin-right: 2vw;
 `;
 
-export const Buttonn = styled.button<Props>`
-  display: ${(Props) => (Props.o?.scrollNav ? `none` : `content`)};
+export const Buttonn = styled.button`
+  display:content;
   outline: none;
   border: none;
   cursor: pointer;

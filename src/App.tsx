@@ -13,6 +13,8 @@ import { UnitsData } from "./views/Units/UnitsData";
 import Partner from "./views/Partner";
 import Franchise from "./views/Franchise";
 import Blog from "./views/Blog";
+import SingleCourse from "./views/SingleCourse";
+import Form from "./views/Form";
 
 // When the user scrolls down 50px from the top of the document, resize the header's font size
 window.onscroll = function () {
@@ -27,7 +29,6 @@ function scrollFunction() {} /*
     xx = "gray";
   }
 }*/
-
 function App() {
   return (
     <>
@@ -42,6 +43,43 @@ function App() {
           <Route path="/parcerias" element={<Partner />} />
           <Route path="/franqueado" element={<Franchise />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/form" element={<Form />} />
+          <Route
+            path={"/cursos/artesdigitais"}
+            element={<SingleCourse data={"Artes Digitais"} />}
+          />
+          <Route
+            path={"/cursos/criacaodesites"}
+            element={<SingleCourse data={"Criação de sites"} />}
+          />
+          <Route
+            path={"/cursos/aplicativos"}
+            element={<SingleCourse data={"Aplicativos"} />}
+          />
+          <Route
+            path={"/cursos/edicaodevideo"}
+            element={<SingleCourse data={"Edição de video"} />}
+          />
+          <Route
+            path={"/cursos/games2d"}
+            element={<SingleCourse data={"Games 2d"} />}
+          />
+          <Route
+            path={"/cursos/games3d"}
+            element={<SingleCourse data={"Games 3d"} />}
+          />
+          <Route
+            path={"/cursos/minemods"}
+            element={<SingleCourse data={"Minemods"} />}
+          />
+          <Route
+            path={"/cursos/robotica"}
+            element={<SingleCourse data={"Robotica"} />}
+          />
+          <Route
+            path={"/cursos/youtuber"}
+            element={<SingleCourse data={"Youtuber"} />}
+          />
         </Routes>
         <Footer />
       </Router>
