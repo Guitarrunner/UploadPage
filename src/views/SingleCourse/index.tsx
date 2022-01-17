@@ -31,7 +31,7 @@ function SingleCourse({ data, info }: { data: any; info: any }) {
                 <h1 className="h1Form">{data}</h1>
                 <p className="pForm">{info.description}</p>
               </div>
-              <a className="btn_primaryForm" href="/contato">
+              <a className="btn_primaryForm" href="/aula">
                 {info.button}
               </a>
             </div>

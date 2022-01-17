@@ -16,6 +16,7 @@ import Blog from "./views/Blog";
 import SingleCourse from "./views/SingleCourse";
 import Form from "./views/Form";
 import { CoursesInfo } from "./CoursesData";
+import FreeClass from "./views/FreeClass";
 
 // When the user scrolls down 50px from the top of the document, resize the header's font size
 window.onscroll = function () {
@@ -45,6 +46,7 @@ function App() {
           <Route path="/franqueado" element={<Franchise />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/form" element={<Form />} />
+          <Route path="/aula" element={<FreeClass />} />
           <Route
             path={"/cursos/artesdigitais"}
             element={

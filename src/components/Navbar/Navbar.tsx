@@ -70,14 +70,14 @@ const Navbar = ({ toggle, on }: { toggle: any; on: any }) => {
                 </NavLinks>
               </NavItem>
               <NavBtn>
-                <Button to="/signin">Cadastre-se</Button>
+                <Button to="/form">Seja um parceiro</Button>
               </NavBtn>
             </NavMenu>
           </NavbarContainer>
         </Nav>
         <Nav2>
           <NavBtn2>
-            <FooterA href="http://localhost:3000/contato">
+            <FooterA href="http://localhost:3000/aula">
               <Buttonn>Aula grátis</Buttonn>
             </FooterA>
           </NavBtn2>

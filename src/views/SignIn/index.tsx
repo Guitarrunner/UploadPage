@@ -24,7 +24,7 @@ const SignIn = () => {
           </a>
           <FormContent>
             <Form action="#">
-              <FormH1>Faça login em sua conta</FormH1>
+              <FormH1>Seja um parceiro</FormH1>
               <FormLabel htmlFor="for">Email</FormLabel>
               <FormInput type="email" required></FormInput>
               <FormLabel htmlFor="for">Senha</FormLabel>
