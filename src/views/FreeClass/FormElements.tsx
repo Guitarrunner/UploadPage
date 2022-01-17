@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const FormSection = styled.section`
+export const ClassSection = styled.section`
   background: #04c4d9;
   margin-top: 150px;
   height: 810px;
@@ -11,7 +11,7 @@ export const FormSection = styled.section`
   }
 `;
 
-export const FormWrapper = styled.div`
+export const ClassWrapper = styled.div`
   display: grid;
   z-index: 1;
   height: 510px;

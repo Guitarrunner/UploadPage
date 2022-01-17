@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Sidebar from "../../components/Sidebar";
 import ScrollToTop from "../ScrollToTop";
-import { FormSection, FormWrapper } from "./FormElements";
+import { ClassSection, ClassWrapper } from "./FormElements";
 import "./index.css";
 
-function Form() {
+function FreeClass() {
   const [isOpen, setisOpen] = useState(false);
   const toggle = () => {
     setisOpen(!isOpen);
@@ -15,14 +15,22 @@ function Form() {
       <ScrollToTop />
       <Navbar toggle={toggle} on="blog" />
       <Sidebar isOpen={isOpen} toggle={toggle} />
-      <FormSection>
-        <FormWrapper>
+      <ClassSection>
+        <ClassWrapper>
           <div className="login-box">
-            <h2>Seja um parceiro UPLOAD</h2>
+            <h2>Agende uma aula experimental</h2>
             <form>
               <div className="user-box">
                 <input type="text" name="" required={true} />
                 <label>Nome</label>
+              </div>
+              <div className="user-box">
+                <input type="password" name="" />
+                <label>Nome do responsável (caso menor de idade)</label>
+              </div>
+              <div className="user-box">
+                <input type="password" name="" required={true} />
+                <label>Idade</label>
               </div>
               <div className="user-box">
                 <input type="password" name="" required={true} />
@@ -34,15 +42,7 @@ function Form() {
               </div>
               <div className="user-box">
                 <input type="password" name="" required={true} />
-                <label>Cidade</label>
-              </div>
-              <div className="user-box">
-                <input type="password" name="" required={true} />
-                <label>Nome da instituicao</label>
-              </div>
-              <div className="user-box">
-                <input type="password" name="" required={true} />
-                <label>Cargo</label>
+                <label>Curso de Interesee</label>
               </div>
               <div className="user-box">
                 <input type="password" name="" />
@@ -57,10 +57,10 @@ function Form() {
               </a>
             </form>
           </div>
-        </FormWrapper>
-      </FormSection>
+        </ClassWrapper>
+      </ClassSection>
     </>
   );
 }
 
-export default Form;
+export default FreeClass;
